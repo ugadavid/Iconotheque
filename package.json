@@ -1,0 +1,29 @@
+{
+  "name": "iconotheque",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Application desktop locale pour explorer une phototheque personnelle.",
+  "main": "dist-electron/main.js",
+  "type": "module",
+  "scripts": {
+    "dev:renderer": "vite --host 127.0.0.1",
+    "dev:electron": "tsc -p electron/tsconfig.json && electron dist-electron/main.js --dev",
+    "build": "tsc -p tsconfig.json && vite build && tsc -p electron/tsconfig.json",
+    "start": "electron dist-electron/main.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p electron/tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sql.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}

@@ -1,1 +1,4 @@
 /photos_demo
+node_modules/
+dist/
+dist-electron/
