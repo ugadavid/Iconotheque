@@ -11,7 +11,7 @@ type InfoPanelProps = {
   metadataRefreshToken: number;
   onOpenBatchMetadataEditor: () => void;
   onClearMultiSelection: () => void;
-  onImageWorkflowColorChange: (imagePath: string, workflowColor: WorkflowColor) => void;
+  onImageWorkflowColorChange: (imageId: number, workflowColor: WorkflowColor) => void;
 };
 
 function getDatabaseLabel(databaseStatus: DatabaseStatus): string {
@@ -49,15 +49,27 @@ export function InfoPanel({
     ["Mode fichiers", "Lecture seule"]
   ];
   const imageRows = selectedImage
-    ? [
-        ["Nom du fichier", selectedImage.name],
-        ["Chemin complet", selectedImage.path],
-        ["Extension", selectedImage.extension],
-        ["Taille", formatBytes(selectedImage.sizeBytes)],
-        ["Date de modification", formatModifiedAt(selectedImage.modifiedAt)],
-        ["URL d'aperçu", selectedImage.previewUrl],
-        ["Mode fichiers", "Lecture seule"]
-      ]
+    ? selectedImage.sourceKind === "remote"
+      ? [
+          ["Nom", selectedImage.displayName],
+          ["Source", selectedImage.remoteProvider === "midjourney" ? "Midjourney" : "Web"],
+          ["Slot", selectedImage.remoteSlot ?? "-"],
+          ["Groupe", selectedImage.remoteProviderGroupId ?? "-"],
+          ["Extension", selectedImage.extension || "-"],
+          ["Taille", formatBytes(selectedImage.sizeBytes)],
+          ["Date catalogue", formatModifiedAt(selectedImage.modifiedAt)],
+          ["URL d'apercu", selectedImage.imageSrc],
+          ["Mode fichiers", "Lecture seule"]
+        ]
+      : [
+          ["Nom du fichier", selectedImage.name],
+          ["Chemin complet", selectedImage.path ?? "-"],
+          ["Extension", selectedImage.extension],
+          ["Taille", formatBytes(selectedImage.sizeBytes)],
+          ["Date de modification", formatModifiedAt(selectedImage.modifiedAt)],
+          ["URL d'apercu", selectedImage.imageSrc],
+          ["Mode fichiers", "Lecture seule"]
+        ]
     : null;
 
   return (
@@ -111,7 +123,7 @@ export function InfoPanel({
         </section>
       ) : selectedImage && (
         <div className="selected-preview">
-          <img src={selectedImage.previewUrl} alt="" />
+          <img src={selectedImage.imageSrc} alt="" />
         </div>
       )}
       {!isMultiSelection && selectedImage && imageRows ? (

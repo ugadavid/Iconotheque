@@ -1,0 +1,7 @@
+Dans 2 terminaux depuis cd J:\2026\Iconotheque
+
+npm.cmd run dev:renderer
+npm.cmd run dev:electron
+
+Ouvrir console :
+Ctrl + Shift + I

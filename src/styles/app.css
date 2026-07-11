@@ -130,6 +130,12 @@ button {
   max-width: 320px;
 }
 
+.status-item-feedback {
+  max-width: 360px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 .status-action {
   flex: 0 0 auto;
   min-height: 22px;
@@ -438,6 +444,49 @@ button {
   gap: 6px;
 }
 
+.folder-source-group {
+  display: grid;
+  gap: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e1d9cb;
+  margin-bottom: 4px;
+}
+
+.folder-collections-group {
+  padding-top: 6px;
+}
+
+.folder-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 6px;
+  color: #65727a;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.folder-section-heading button {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid #d2ccc0;
+  border-radius: 6px;
+  color: #39464d;
+  background: #fbf7ed;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.folder-section-heading button:hover {
+  border-color: #9fb9af;
+  background: #f5efe3;
+}
+
 .folder-node {
   display: grid;
   gap: 4px;
@@ -470,6 +519,13 @@ button {
   background: #e8f1ed;
 }
 
+.folder-row-drop-target {
+  border-color: #7ca397;
+  color: #173932;
+  background: #dceee7;
+  box-shadow: inset 0 0 0 2px rgba(47, 111, 100, 0.12);
+}
+
 .folder-name {
   min-width: 0;
   overflow: hidden;
@@ -491,6 +547,11 @@ button {
 .folder-row-active .folder-count {
   color: #2f5f58;
   background: #d7e8e0;
+}
+
+.folder-row-drop-target .folder-count {
+  color: #173932;
+  background: #c8e2d8;
 }
 
 .folder-node-error {
@@ -533,6 +594,50 @@ button {
   flex: 0 0 auto;
 }
 
+.web-source-icon {
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #7ca397;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.web-source-icon::before {
+  width: 7px;
+  height: 7px;
+  border-radius: inherit;
+  background: #7ca397;
+  content: "";
+}
+
+.web-source-icon-midjourney {
+  border-color: #8067a8;
+}
+
+.web-source-icon-midjourney::before {
+  background: #8067a8;
+}
+
+.collection-source-icon {
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #8c7a4e;
+  border-radius: 4px;
+  flex: 0 0 auto;
+}
+
+.collection-source-icon::before {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: #8c7a4e;
+  content: "";
+}
+
 .image-grid-panel {
   background: #f2eee4;
 }
@@ -546,6 +651,221 @@ button {
 .image-grid:focus-visible {
   outline: 2px solid rgba(47, 111, 100, 0.28);
   outline-offset: 4px;
+}
+
+.midjourney-view-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  padding: 3px;
+  border: 1px solid #d2ccc0;
+  border-radius: 6px;
+  background: #fffaf0;
+}
+
+.midjourney-view-toggle span {
+  padding: 0 6px;
+  color: #65727a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.midjourney-view-toggle button {
+  min-height: 28px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 4px;
+  color: #526068;
+  background: transparent;
+  cursor: pointer;
+}
+
+.midjourney-view-toggle button:hover,
+.midjourney-view-toggle button:focus-visible,
+.midjourney-view-toggle-active {
+  color: #2f5f58;
+  background: #e8f1ed;
+  outline: none;
+}
+
+.midjourney-job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  min-width: 0;
+}
+
+.midjourney-job-card {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #d2ccc0;
+  border-radius: 7px;
+  background: #fffaf0;
+  box-shadow: 0 8px 18px rgba(31, 42, 45, 0.08);
+}
+
+.midjourney-job-card[draggable="true"] {
+  cursor: grab;
+}
+
+.midjourney-job-card[draggable="true"]:active {
+  cursor: grabbing;
+}
+
+.midjourney-job-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+}
+
+.midjourney-job-heading > div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.midjourney-job-heading strong,
+.midjourney-job-heading span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.midjourney-job-heading strong {
+  color: #26343b;
+  font-size: 13px;
+}
+
+.midjourney-job-heading span {
+  color: #65727a;
+  font-size: 12px;
+}
+
+.midjourney-job-heading button {
+  flex: 0 0 auto;
+  max-width: 132px;
+  min-height: 30px;
+  padding: 0 9px;
+  border: 1px solid #d2ccc0;
+  border-radius: 5px;
+  color: #526068;
+  background: #fffdf8;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.midjourney-job-heading button:hover:not(:disabled),
+.midjourney-job-heading button:focus-visible:not(:disabled) {
+  border-color: #7ca397;
+  color: #2f5f58;
+  outline: none;
+}
+
+.midjourney-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  min-width: 0;
+}
+
+.midjourney-slot {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d2ccc0;
+  border-radius: 6px;
+  color: #526068;
+  background: #f7f3ea;
+  text-align: center;
+}
+
+.video-preview-placeholder {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 6px;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  color: #f7f5ef;
+  background: linear-gradient(135deg, #35434a, #65727a);
+}
+
+.video-preview-placeholder span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  font-size: 16px;
+  padding-left: 2px;
+}
+
+.video-preview-placeholder small { font-size: 11px; }
+
+button.midjourney-slot {
+  padding: 0;
+  cursor: pointer;
+}
+
+.midjourney-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.midjourney-slot > span {
+  position: absolute;
+  left: 7px;
+  bottom: 7px;
+  z-index: 2;
+  padding: 3px 6px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: rgba(47, 95, 88, 0.88);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.midjourney-slot-empty {
+  gap: 6px;
+  border-style: dashed;
+}
+
+.midjourney-slot-empty span {
+  position: static;
+  color: #65727a;
+  background: transparent;
+  font-size: 12px;
+}
+
+.midjourney-slot-empty small,
+.midjourney-slot small {
+  z-index: 2;
+  padding: 6px;
+  color: #7c3f2e;
+  background: rgba(255, 250, 240, 0.86);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.midjourney-slot-selected {
+  border-color: #2f6f64;
+  box-shadow: 0 0 0 3px rgba(47, 111, 100, 0.22);
+}
+
+.midjourney-slot-batch-selected {
+  border-color: #4e7da8;
+  box-shadow: 0 0 0 3px rgba(78, 125, 168, 0.22);
 }
 
 .image-tile {
@@ -649,6 +969,24 @@ button {
   box-shadow: 0 2px 8px rgba(31, 42, 45, 0.28);
 }
 
+.image-source-badge {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  z-index: 4;
+  max-width: calc(100% - 16px);
+  padding: 3px 7px;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 999px;
+  color: #ffffff;
+  background: rgba(47, 95, 88, 0.86);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(31, 42, 45, 0.24);
+}
+
 .image-tile-selected.image-tile-workflow .image-preview::after {
   box-shadow: inset 0 0 0 3px color-mix(in srgb, var(--workflow-color), transparent 18%);
 }
@@ -710,6 +1048,21 @@ button {
   object-fit: cover;
 }
 
+.image-load-error {
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  align-self: stretch;
+  justify-self: stretch;
+  padding: 12px;
+  color: #7c3f2e;
+  background: #fff0ea;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
 .image-tile span {
   overflow: hidden;
   color: #526068;
@@ -724,6 +1077,55 @@ button {
   font-size: 11px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.image-context-menu-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: transparent;
+}
+
+.image-context-menu {
+  position: fixed;
+  display: grid;
+  width: 230px;
+  min-width: 0;
+  padding: 6px;
+  border: 1px solid rgba(38, 52, 59, 0.16);
+  border-radius: 7px;
+  background: #fffaf0;
+  box-shadow: 0 14px 34px rgba(31, 42, 45, 0.18);
+}
+
+.image-context-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 5px;
+  color: #26343b;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+}
+
+.image-context-menu button:hover:not(:disabled),
+.image-context-menu button:focus-visible:not(:disabled) {
+  color: #173932;
+  background: #eef7f2;
+  outline: none;
+}
+
+.image-context-menu button:disabled {
+  color: #9aa0a3;
+  cursor: default;
 }
 
 .empty-grid-state {
@@ -1324,6 +1726,20 @@ button {
   cursor: default;
 }
 
+.image-viewer-error {
+  max-width: min(520px, 90%);
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  color: #fff8f2;
+  background: rgba(124, 63, 46, 0.82);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  cursor: default;
+}
+
 .image-viewer-nav {
   position: absolute;
   top: 50%;
@@ -1400,6 +1816,144 @@ button {
   border-radius: 8px;
   background: #fbf7ed;
   box-shadow: 0 20px 60px rgba(31, 42, 45, 0.28);
+}
+
+.remote-image-modal {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 16px;
+  width: min(560px, 100%);
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #cfc8ba;
+  border-radius: 8px;
+  background: #fbf7ed;
+  box-shadow: 0 20px 60px rgba(31, 42, 45, 0.28);
+}
+
+.remote-image-modal-wide {
+  width: min(680px, 100%);
+}
+
+.remote-image-form {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.video-thumbnail-preview {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: min(56vh, 480px);
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.remote-image-form label {
+  color: #39464d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.remote-image-form input,
+.remote-image-form select {
+  min-width: 0;
+  min-height: 38px;
+  padding: 0 10px;
+  border: 1px solid #d2ccc0;
+  border-radius: 6px;
+  color: #25333a;
+  background: #fffdf8;
+}
+
+.remote-image-form input:focus-visible,
+.remote-image-form select:focus-visible {
+  border-color: #7ca397;
+  outline: 2px solid rgba(47, 111, 100, 0.18);
+}
+
+.remote-image-form textarea {
+  min-width: 0;
+  min-height: 180px;
+  padding: 10px;
+  border: 1px solid #d2ccc0;
+  border-radius: 6px;
+  color: #25333a;
+  background: #fffdf8;
+  resize: vertical;
+  font: inherit;
+  line-height: 1.45;
+}
+
+.remote-image-form textarea:focus-visible {
+  border-color: #7ca397;
+  outline: 2px solid rgba(47, 111, 100, 0.18);
+}
+
+.remote-image-note {
+  margin: 0;
+  color: #65727a;
+  font-size: 12px;
+}
+
+.remote-image-feedback {
+  margin: 0;
+  padding: 2px 0 0;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.remote-image-feedback-success {
+  color: #2f5f58;
+}
+
+.remote-image-feedback-warning {
+  color: #8a5b25;
+}
+
+.remote-image-feedback-error {
+  color: #a5422e;
+}
+
+.midjourney-invalid-lines {
+  display: grid;
+  gap: 6px;
+  max-height: 130px;
+  min-width: 0;
+  overflow: auto;
+  padding: 2px 0 0;
+  color: #7b5148;
+  font-size: 12px;
+}
+
+.midjourney-invalid-lines p,
+.midjourney-invalid-lines ul {
+  margin: 0;
+}
+
+.midjourney-invalid-lines ul {
+  display: grid;
+  gap: 4px;
+  padding-left: 16px;
+}
+
+.midjourney-invalid-lines li {
+  min-width: 0;
+}
+
+.midjourney-invalid-lines span,
+.midjourney-invalid-lines small {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.midjourney-invalid-lines small {
+  color: #9b6d63;
 }
 
 .help-panel {
@@ -1496,8 +2050,21 @@ button {
 }
 
 .batch-modal-actions button:disabled {
-  cursor: wait;
+  cursor: not-allowed;
   opacity: 0.62;
+}
+
+.batch-modal-actions .danger-action {
+  border-color: #9f4639;
+  color: #ffffff;
+  background: #9f4639;
+}
+
+.batch-modal-actions .danger-action:hover:not(:disabled),
+.batch-modal-actions .danger-action:focus-visible:not(:disabled) {
+  border-color: #87372d;
+  color: #ffffff;
+  background: #87372d;
 }
 
 .batch-modal-body {

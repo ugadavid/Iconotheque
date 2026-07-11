@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import packageJson from "../../package.json";
 
 type HelpPanelProps = {
   isOpen: boolean;
@@ -52,8 +53,8 @@ export function HelpPanel({ isOpen, onClose }: HelpPanelProps) {
         <div className="help-heading">
           <div>
             <p className="help-kicker">Aide locale</p>
-            <h2 id="help-title">Iconotheque V0.1</h2>
-            <p>Prototype desktop local pour explorer, documenter et retrouver une phototheque.</p>
+            <h2 id="help-title">Iconotheque {packageJson.version}</h2>
+            <p>Application locale pour explorer, documenter et retrouver des images.</p>
           </div>
           <button type="button" onClick={onClose}>
             Fermer
@@ -70,6 +71,9 @@ export function HelpPanel({ isOpen, onClose }: HelpPanelProps) {
               <li>Selectionner une ou plusieurs images, puis renseigner les metadonnees.</li>
               <li>Ouvrir la visionneuse avec Entree ou un double-clic.</li>
               <li>Utiliser la recherche simple, la recherche avancee et les filtres workflow.</li>
+              <li>Ajouter une image web ou un ou plusieurs jobs Midjourney depuis le menu Fichier.</li>
+              <li>Organiser les images locales et distantes dans des collections virtuelles.</li>
+              <li>Retirer une reference Web ou Midjourney du catalogue depuis son menu contextuel, sans agir sur sa source distante.</li>
             </ul>
           </section>
 
@@ -92,14 +96,16 @@ export function HelpPanel({ isOpen, onClose }: HelpPanelProps) {
               <li>Aucune ecriture n'est faite dans les dossiers photo selectionnes.</li>
               <li>Les apercus passent par le protocole local controle iconotheque-image://.</li>
               <li>Les metadonnees utilisateur sont stockees localement dans SQLite.</li>
+              <li>L'identite de catalogue est fondee sur <code>images.id</code>, pour les images locales comme distantes.</li>
             </ul>
           </section>
 
           <section className="help-section">
-            <h3>Limites connues V0.1</h3>
+            <h3>Limites connues</h3>
             <ul>
               <li>Pas d'EXIF, pas d'IA et pas de miniatures physiques pour le moment.</li>
-              <li>Les images sont associees a leurs metadonnees par chemin de fichier.</li>
+              <li>Une image locale peut devenir indisponible si son fichier source est deplace, renomme ou supprime hors d'Iconotheque.</li>
+              <li>Les sources web et Midjourney dependent de leur disponibilite distante ; il n'y a ni cache ni archivage local.</li>
               <li>La recherche avancee V1 ne repose pas encore sur FTS.</li>
               <li>Certaines validations restent manuelles en environnement Electron.</li>
             </ul>

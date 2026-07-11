@@ -31,18 +31,47 @@ CREATE TABLE IF NOT EXISTS folders (
 
 CREATE TABLE IF NOT EXISTS images (
   id INTEGER PRIMARY KEY,
+  source_kind TEXT NOT NULL DEFAULT 'local' CHECK(source_kind IN ('local', 'remote')),
+  created_at TEXT,
+  updated_at TEXT
+);
+
+CREATE TABLE IF NOT EXISTS local_images (
+  image_id INTEGER PRIMARY KEY,
   root_id INTEGER NOT NULL,
   folder_id INTEGER,
-  path TEXT UNIQUE NOT NULL,
-  file_name TEXT NOT NULL,
+  path TEXT NOT NULL UNIQUE,
   folder_path TEXT NOT NULL,
+  file_name TEXT NOT NULL,
   extension TEXT,
   size_bytes INTEGER,
   modified_at TEXT,
   preview_id TEXT,
-  indexed_at TEXT,
+  created_at TEXT,
+  updated_at TEXT,
+  FOREIGN KEY(image_id) REFERENCES images(id),
   FOREIGN KEY(root_id) REFERENCES roots(id),
   FOREIGN KEY(folder_id) REFERENCES folders(id)
+);
+
+CREATE TABLE IF NOT EXISTS remote_images (
+  image_id INTEGER PRIMARY KEY,
+  remote_url TEXT NOT NULL,
+  provider TEXT,
+  provider_id TEXT,
+  provider_group_id TEXT,
+  remote_slot TEXT,
+  media_kind TEXT NOT NULL DEFAULT 'image' CHECK(media_kind IN ('image', 'video')),
+  video_thumbnail_status TEXT NOT NULL DEFAULT 'missing' CHECK(video_thumbnail_status IN ('missing', 'generated', 'failed')),
+  video_thumbnail_key TEXT,
+  local_copy_status TEXT NOT NULL DEFAULT 'missing' CHECK(local_copy_status IN ('missing', 'downloaded', 'failed')),
+  local_copy_key TEXT,
+  source_status TEXT NOT NULL DEFAULT 'remote' CHECK(source_status IN ('remote', 'cached', 'archived')),
+  last_checked_at TEXT,
+  last_known_status TEXT,
+  created_at TEXT,
+  updated_at TEXT,
+  FOREIGN KEY(image_id) REFERENCES images(id)
 );
 
 CREATE TABLE IF NOT EXISTS tags (
@@ -96,4 +125,22 @@ CREATE TABLE IF NOT EXISTS image_terms (
   PRIMARY KEY(image_id, term_id),
   FOREIGN KEY(image_id) REFERENCES images(id),
   FOREIGN KEY(term_id) REFERENCES terms(id)
+);
+
+CREATE TABLE IF NOT EXISTS collections (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE,
+  description TEXT,
+  created_at TEXT,
+  updated_at TEXT
+);
+
+CREATE TABLE IF NOT EXISTS collection_images (
+  collection_id INTEGER NOT NULL,
+  image_id INTEGER NOT NULL,
+  added_at TEXT,
+  sort_order INTEGER,
+  PRIMARY KEY(collection_id, image_id),
+  FOREIGN KEY(collection_id) REFERENCES collections(id) ON DELETE CASCADE,
+  FOREIGN KEY(image_id) REFERENCES images(id) ON DELETE CASCADE
 );

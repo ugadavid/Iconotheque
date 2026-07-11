@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Iconotheque MJ Collector",
+  "description": "Collecte localement les job IDs Midjourney visibles pour les importer ensuite dans Iconotheque.",
+  "version": "0.3.0",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Iconotheque MJ Collector",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.midjourney.com/*",
+        "https://cdn.midjourney.com/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

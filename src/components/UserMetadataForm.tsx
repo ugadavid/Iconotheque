@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import type { ChangeEvent, KeyboardEvent } from "react";
-import type { ImageFile, ImageUserMetadata, TermKind, WorkflowColor } from "../types";
+import type { ImageFile, ImageIdentity, ImageUserMetadata, TermKind, WorkflowColor } from "../types";
 
 type UserMetadataFormProps = {
   image: ImageFile;
   refreshToken: number;
-  onWorkflowColorSaved: (imagePath: string, workflowColor: WorkflowColor) => void;
+  onWorkflowColorSaved: (imageId: number, workflowColor: WorkflowColor) => void;
 };
 
 type SaveState = "loading" | "ready" | "dirty" | "saving" | "saved" | "error";
@@ -37,6 +37,13 @@ const GENERATION_TOOL_OPTIONS = [
   "Nano Banana",
   "Stable Diffusion"
 ];
+
+function getImageIdentity(image: ImageFile): ImageIdentity {
+  return {
+    imageId: image.imageId,
+    imagePath: image.path ?? null
+  };
+}
 
 const STATUS_OPTIONS = ["", "A trier", "En cours", "Classee", "A revoir", "A publier", "Archivee"];
 
@@ -254,7 +261,7 @@ export function UserMetadataForm({ image, refreshToken, onWorkflowColorSaved }: 
     setSaveState("loading");
     setError(null);
 
-    void window.iconotheque.getImageUserMetadata(image.path).then((result) => {
+    void window.iconotheque.getImageUserMetadata(getImageIdentity(image)).then((result) => {
       if (!isActive) {
         return;
       }
@@ -272,7 +279,7 @@ export function UserMetadataForm({ image, refreshToken, onWorkflowColorSaved }: 
     return () => {
       isActive = false;
     };
-  }, [image.path, refreshToken]);
+  }, [image.imageId, image.path, refreshToken]);
 
   function updateMetadata(update: Partial<ImageUserMetadata>): void {
     setMetadata((currentMetadata) => ({
@@ -323,7 +330,7 @@ export function UserMetadataForm({ image, refreshToken, onWorkflowColorSaved }: 
     setSaveState("saving");
     setError(null);
 
-    const result = await window.iconotheque.saveImageUserMetadata(image.path, metadata);
+    const result = await window.iconotheque.saveImageUserMetadata(getImageIdentity(image), metadata);
 
     if (!result.ok) {
       setSaveState("error");
@@ -331,13 +338,13 @@ export function UserMetadataForm({ image, refreshToken, onWorkflowColorSaved }: 
       return;
     }
 
-    const reloadedMetadata = await window.iconotheque.getImageUserMetadata(image.path);
+    const reloadedMetadata = await window.iconotheque.getImageUserMetadata(getImageIdentity(image));
 
     if (reloadedMetadata.ok) {
       setMetadata(reloadedMetadata.metadata);
-      onWorkflowColorSaved(image.path, reloadedMetadata.metadata.workflowColor);
+      onWorkflowColorSaved(image.imageId, reloadedMetadata.metadata.workflowColor);
     } else {
-      onWorkflowColorSaved(image.path, metadata.workflowColor);
+      onWorkflowColorSaved(image.imageId, metadata.workflowColor);
     }
 
     setSaveState("saved");

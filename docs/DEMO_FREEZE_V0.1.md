@@ -1,12 +1,16 @@
-# Iconotheque V0.1 - Gel de demonstration
+# Iconotheque V0.1.0 - Gel de demonstration
+
+> **Document historique.** Cette page est une photographie du gel `0.1.0` ; elle ne décrit pas la version courante. Consulter le [README](../README.md) pour l’état fonctionnel actuel.
 
 Date du gel : 2026-07-06
 
 Nature : premiere version locale fonctionnelle, prototype utilisable.
 
+Note de stabilisation : `0.1.0` correspond au gel initial, `0.1.1` a servi de stabilisation transitoire, et `0.1.2` est la version stable post-gel alignee avec la convention patch pair = stable.
+
 ## Resume de la version
 
-Iconotheque V0.1 permet deja d'ouvrir un dossier racine local, de parcourir son arborescence, d'afficher les images du dossier actif, de les selectionner, de les visualiser et de documenter un catalogue personnel avec des metadonnees stockees localement.
+Iconotheque V0.1.0 permet deja d'ouvrir un dossier racine local, de parcourir son arborescence, d'afficher les images du dossier actif, de les selectionner, de les visualiser et de documenter un catalogue personnel avec des metadonnees stockees localement.
 
 La version est volontairement centree sur l'exploration et la documentation manuelle. Elle ne cherche pas encore a extraire les EXIF, generer des miniatures physiques, detecter les doublons, reconnaitre des personnes ou ajouter de l'IA.
 

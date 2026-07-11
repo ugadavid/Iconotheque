@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { KeyboardEvent, MouseEvent } from "react";
 import { formatBytes } from "../formatters";
 import type { ImageFile } from "../types";
@@ -17,9 +17,10 @@ export function ImageViewer({
   onClose
 }: ImageViewerProps) {
   const viewerRef = useRef<HTMLDivElement | null>(null);
+  const [hasImageLoadError, setHasImageLoadError] = useState(false);
   const selectedImageIndex = useMemo(
-    () => images.findIndex((image) => image.path === selectedImage.path),
-    [images, selectedImage.path]
+    () => images.findIndex((image) => image.imageId === selectedImage.imageId),
+    [images, selectedImage.imageId]
   );
   const canSelectPreviousImage = selectedImageIndex > 0;
   const canSelectNextImage = selectedImageIndex >= 0 && selectedImageIndex < images.length - 1;
@@ -28,7 +29,8 @@ export function ImageViewer({
 
   useEffect(() => {
     viewerRef.current?.focus();
-  }, [selectedImage.path]);
+    setHasImageLoadError(false);
+  }, [selectedImage.imageId]);
 
   function selectRelativeImage(delta: number): void {
     if (selectedImageIndex < 0) {
@@ -107,7 +109,28 @@ export function ImageViewer({
         >
           &lt;
         </button>
-        <img src={selectedImage.previewUrl} alt={selectedImage.name} onClick={stopViewerClick} />
+        {selectedImage.mediaKind === "video" ? (
+          <video controls preload="metadata" playsInline src={selectedImage.imageSrc} onClick={stopViewerClick} />
+        ) : <img
+          src={selectedImage.imageSrc}
+          alt={selectedImage.name}
+          onClick={stopViewerClick}
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+            setHasImageLoadError(true);
+          }}
+          onLoad={(event) => {
+            event.currentTarget.style.display = "";
+            setHasImageLoadError(false);
+          }}
+        />}
+        {hasImageLoadError ? (
+          <div className="image-viewer-error" role="status" onClick={stopViewerClick}>
+            {selectedImage.sourceKind === "remote"
+              ? selectedImage.mediaKind === "video" ? "Video distante indisponible" : "Image distante indisponible"
+              : "Image indisponible"}
+          </div>
+        ) : null}
         <button
           className="image-viewer-nav image-viewer-nav-next"
           type="button"

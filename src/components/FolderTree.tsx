@@ -1,11 +1,29 @@
-import type { FolderTreeNode, FolderTreeScanState, RootFolder } from "../types";
-import type { CSSProperties } from "react";
+import type { CollectionSummary, FolderTreeNode, FolderTreeScanState, RootFolder } from "../types";
+import type { CSSProperties, DragEvent, MouseEvent } from "react";
 
 type FolderTreeProps = {
   rootFolder: RootFolder | null;
   folderTreeScan: FolderTreeScanState;
   selectedFolderPath: string | null;
+  activeSource: "local" | "web-generic" | "web-midjourney" | "web-midjourney-video" | "collection";
+  collections: CollectionSummary[];
+  selectedCollectionId: number | null;
+  dropTargetCollectionId: number | null;
+  canDropImagesOnCollection: boolean;
+  genericRemoteImageCount: number;
+  midjourneyImageCount: number;
+  midjourneyVideoCount: number;
   onSelectFolder: (folder: RootFolder) => void;
+  onSelectWebImages: () => void;
+  onSelectMidjourneyImages: () => void;
+  onSelectMidjourneyVideos: () => void;
+  onSelectCollection: (collection: CollectionSummary) => void;
+  onCollectionContextMenu: (collection: CollectionSummary, position: { x: number; y: number }) => void;
+  onCollectionDragEnter: (collection: CollectionSummary) => void;
+  onCollectionDragLeave: (collection: CollectionSummary) => void;
+  onCollectionDragOver: (event: DragEvent<HTMLButtonElement>) => void;
+  onCollectionDrop: (collection: CollectionSummary) => void;
+  onCreateCollection: () => void;
 };
 
 type FolderNodeProps = {
@@ -77,7 +95,25 @@ export function FolderTree({
   rootFolder,
   folderTreeScan,
   selectedFolderPath,
-  onSelectFolder
+  activeSource,
+  collections,
+  selectedCollectionId,
+  dropTargetCollectionId,
+  canDropImagesOnCollection,
+  genericRemoteImageCount,
+  midjourneyImageCount,
+  midjourneyVideoCount,
+  onSelectFolder,
+  onSelectWebImages,
+  onSelectMidjourneyImages,
+  onSelectMidjourneyVideos,
+  onSelectCollection,
+  onCollectionContextMenu,
+  onCollectionDragEnter,
+  onCollectionDragLeave,
+  onCollectionDragOver,
+  onCollectionDrop,
+  onCreateCollection
 }: FolderTreeProps) {
   const hasNoSubfolders =
     folderTreeScan.status === "ready" &&
@@ -91,6 +127,100 @@ export function FolderTree({
         <span>{getTreeStatus(rootFolder, folderTreeScan)}</span>
       </div>
       <nav className="folder-list" aria-label="Dossiers de la phototheque">
+        <div className="folder-source-group" aria-label="Sources">
+          <button
+            className={activeSource === "web-generic" ? "folder-row folder-row-active" : "folder-row"}
+            type="button"
+            aria-current={activeSource === "web-generic" ? "true" : undefined}
+            onClick={onSelectWebImages}
+          >
+            <span className="web-source-icon" aria-hidden="true" />
+            <span className="folder-name">Web / Images par URL</span>
+            <span className="folder-count" title="Images web">
+              {genericRemoteImageCount}
+            </span>
+          </button>
+          <button
+            className={activeSource === "web-midjourney-video" ? "folder-row folder-row-active" : "folder-row"}
+            type="button"
+            aria-current={activeSource === "web-midjourney-video" ? "true" : undefined}
+            onClick={onSelectMidjourneyVideos}
+          >
+            <span className="web-source-icon web-source-icon-midjourney" aria-hidden="true" />
+            <span className="folder-name">Web / Midjourney / Videos</span>
+            <span className="folder-count" title="Videos Midjourney">{midjourneyVideoCount}</span>
+          </button>
+          <button
+            className={activeSource === "web-midjourney" ? "folder-row folder-row-active" : "folder-row"}
+            type="button"
+            aria-current={activeSource === "web-midjourney" ? "true" : undefined}
+            onClick={onSelectMidjourneyImages}
+          >
+            <span className="web-source-icon web-source-icon-midjourney" aria-hidden="true" />
+            <span className="folder-name">Web / Midjourney</span>
+            <span className="folder-count" title="Images Midjourney">
+              {midjourneyImageCount}
+            </span>
+          </button>
+        </div>
+        <div className="folder-source-group folder-collections-group" aria-label="Collections virtuelles">
+          <div className="folder-section-heading">
+            <span>Collections</span>
+            <button type="button" onClick={onCreateCollection} title="Nouvelle collection">
+              +
+            </button>
+          </div>
+          {collections.length > 0 ? (
+            collections.map((collection) => (
+              <button
+                className={
+                  [
+                    "folder-row",
+                    activeSource === "collection" && selectedCollectionId === collection.id
+                      ? "folder-row-active"
+                      : "",
+                    canDropImagesOnCollection && dropTargetCollectionId === collection.id
+                      ? "folder-row-drop-target"
+                      : ""
+                  ]
+                    .filter(Boolean)
+                    .join(" ")
+                }
+                type="button"
+                key={collection.id}
+                aria-current={
+                  activeSource === "collection" && selectedCollectionId === collection.id
+                    ? "true"
+                    : undefined
+                }
+                title={collection.description ?? "Collection virtuelle"}
+                onClick={() => onSelectCollection(collection)}
+                onContextMenu={(event: MouseEvent<HTMLButtonElement>) => {
+                  event.preventDefault();
+                  onCollectionContextMenu(collection, { x: event.clientX, y: event.clientY });
+                }}
+                onDragEnter={() => onCollectionDragEnter(collection)}
+                onDragLeave={() => onCollectionDragLeave(collection)}
+                onDragOver={onCollectionDragOver}
+                onDrop={(event: DragEvent<HTMLButtonElement>) => {
+                  event.preventDefault();
+                  onCollectionDrop(collection);
+                }}
+              >
+                <span className="collection-source-icon" aria-hidden="true" />
+                <span className="folder-name">{collection.name}</span>
+                <span className="folder-count" title="Images dans la collection">
+                  {collection.imageCount}
+                </span>
+              </button>
+            ))
+          ) : (
+            <div className="folder-ready-note" role="status">
+              <span className="collection-source-icon" aria-hidden="true" />
+              <span>Aucune collection.</span>
+            </div>
+          )}
+        </div>
         {!rootFolder ? (
           <div className="folder-ready-note" role="status">
             <span className="folder-icon" aria-hidden="true" />

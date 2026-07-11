@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iconotheque MJ Collector</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <h1>Iconotheque MJ Collector</h1>
+        <p id="counter" class="counter">0 job detecte</p>
+      </header>
+
+      <section class="mode-panel" aria-labelledby="modeTitle">
+        <h2 id="modeTitle">Mode de collecte</h2>
+        <label class="mode-option">
+          <input type="radio" name="collectionMode" value="manual">
+          <span>Manuel uniquement</span>
+        </label>
+        <label class="mode-option">
+          <input type="radio" name="collectionMode" value="targeted">
+          <span>Auto cible</span>
+        </label>
+        <label class="mode-option">
+          <input type="radio" name="collectionMode" value="broad">
+          <span>Auto large</span>
+        </label>
+        <p class="mode-help">Auto large peut detecter beaucoup d'IDs sur les pages riches comme Imagine.</p>
+      </section>
+
+      <section class="actions" aria-label="Actions">
+        <button id="scanButton" type="button">Scanner cette page</button>
+        <button id="copyButton" type="button">Copier les IDs</button>
+        <button id="exportButton" type="button">Exporter TXT</button>
+        <button id="exportJsonButton" type="button">Exporter JSON</button>
+        <button id="clearButton" class="secondary danger" type="button">Vider la liste</button>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <section class="recent" aria-label="Derniers jobs detectes">
+        <h2>Derniers IDs</h2>
+        <ul id="jobList" class="job-list"></ul>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

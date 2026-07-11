@@ -1,0 +1,2056 @@
+{
+  "exportedAt": "2026-07-10T20:14:03.824Z",
+  "source": "iconotheque-mj-collector",
+  "version": "0.2.0",
+  "jobs": [
+    {
+      "jobId": "530c1eb5-1765-471a-ad8d-182370ec2fb6",
+      "firstSeenAt": "2026-07-10T20:13:56.919Z",
+      "lastSeenAt": "2026-07-10T20:13:56.608Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/530c1eb5-1765-471a-ad8d-182370ec2fb6?index=0",
+        "https://www.midjourney.com/jobs/530c1eb5-1765-471a-ad8d-182370ec2fb6?index=1",
+        "https://www.midjourney.com/jobs/530c1eb5-1765-471a-ad8d-182370ec2fb6?index=2",
+        "https://www.midjourney.com/jobs/530c1eb5-1765-471a-ad8d-182370ec2fb6?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "0c9d003c-7df3-439d-a7e8-e9948a2bb6dc",
+      "firstSeenAt": "2026-07-10T20:13:56.919Z",
+      "lastSeenAt": "2026-07-10T20:13:56.303Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/0c9d003c-7df3-439d-a7e8-e9948a2bb6dc?index=0",
+        "https://www.midjourney.com/jobs/0c9d003c-7df3-439d-a7e8-e9948a2bb6dc?index=1",
+        "https://www.midjourney.com/jobs/0c9d003c-7df3-439d-a7e8-e9948a2bb6dc?index=2",
+        "https://www.midjourney.com/jobs/0c9d003c-7df3-439d-a7e8-e9948a2bb6dc?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "60a9d740-5e61-4100-9375-e9974ac288e5",
+      "firstSeenAt": "2026-07-10T20:13:56.070Z",
+      "lastSeenAt": "2026-07-10T20:13:55.769Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/60a9d740-5e61-4100-9375-e9974ac288e5?index=0",
+        "https://www.midjourney.com/jobs/60a9d740-5e61-4100-9375-e9974ac288e5?index=1",
+        "https://www.midjourney.com/jobs/60a9d740-5e61-4100-9375-e9974ac288e5?index=2",
+        "https://www.midjourney.com/jobs/60a9d740-5e61-4100-9375-e9974ac288e5?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "1dd77876-02f2-4154-a46c-8dbeee39a24a",
+      "firstSeenAt": "2026-07-10T20:13:56.070Z",
+      "lastSeenAt": "2026-07-10T20:13:55.471Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/1dd77876-02f2-4154-a46c-8dbeee39a24a?index=0",
+        "https://www.midjourney.com/jobs/1dd77876-02f2-4154-a46c-8dbeee39a24a?index=1",
+        "https://www.midjourney.com/jobs/1dd77876-02f2-4154-a46c-8dbeee39a24a?index=2",
+        "https://www.midjourney.com/jobs/1dd77876-02f2-4154-a46c-8dbeee39a24a?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "e4f0c8f0-651d-4589-b99f-f38d5b899ccf",
+      "firstSeenAt": "2026-07-10T20:13:55.214Z",
+      "lastSeenAt": "2026-07-10T20:13:54.904Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/e4f0c8f0-651d-4589-b99f-f38d5b899ccf?index=0",
+        "https://www.midjourney.com/jobs/e4f0c8f0-651d-4589-b99f-f38d5b899ccf?index=1",
+        "https://www.midjourney.com/jobs/e4f0c8f0-651d-4589-b99f-f38d5b899ccf?index=2",
+        "https://www.midjourney.com/jobs/e4f0c8f0-651d-4589-b99f-f38d5b899ccf?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "0fe74277-ab60-47f2-8d43-f18d3f920d29",
+      "firstSeenAt": "2026-07-10T20:13:54.867Z",
+      "lastSeenAt": "2026-07-10T20:13:54.559Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/0fe74277-ab60-47f2-8d43-f18d3f920d29?index=0",
+        "https://www.midjourney.com/jobs/0fe74277-ab60-47f2-8d43-f18d3f920d29?index=1",
+        "https://www.midjourney.com/jobs/0fe74277-ab60-47f2-8d43-f18d3f920d29?index=2",
+        "https://www.midjourney.com/jobs/0fe74277-ab60-47f2-8d43-f18d3f920d29?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "c2196d51-f974-45e5-8a70-66cffed25e46",
+      "firstSeenAt": "2026-07-10T20:13:54.438Z",
+      "lastSeenAt": "2026-07-10T20:13:54.137Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/c2196d51-f974-45e5-8a70-66cffed25e46?index=0",
+        "https://www.midjourney.com/jobs/c2196d51-f974-45e5-8a70-66cffed25e46?index=1",
+        "https://www.midjourney.com/jobs/c2196d51-f974-45e5-8a70-66cffed25e46?index=2",
+        "https://www.midjourney.com/jobs/c2196d51-f974-45e5-8a70-66cffed25e46?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "8ffd4cc4-cf68-463c-a1fc-7ad5588bba1b",
+      "firstSeenAt": "2026-07-10T20:13:53.943Z",
+      "lastSeenAt": "2026-07-10T20:13:53.638Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/8ffd4cc4-cf68-463c-a1fc-7ad5588bba1b?index=0",
+        "https://www.midjourney.com/jobs/8ffd4cc4-cf68-463c-a1fc-7ad5588bba1b?index=1",
+        "https://www.midjourney.com/jobs/8ffd4cc4-cf68-463c-a1fc-7ad5588bba1b?index=2",
+        "https://www.midjourney.com/jobs/8ffd4cc4-cf68-463c-a1fc-7ad5588bba1b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "97f7ae32-e17f-48c4-90fe-e9b0607b4f14",
+      "firstSeenAt": "2026-07-10T20:13:53.540Z",
+      "lastSeenAt": "2026-07-10T20:13:53.237Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/97f7ae32-e17f-48c4-90fe-e9b0607b4f14?index=0",
+        "https://www.midjourney.com/jobs/97f7ae32-e17f-48c4-90fe-e9b0607b4f14?index=1",
+        "https://www.midjourney.com/jobs/97f7ae32-e17f-48c4-90fe-e9b0607b4f14?index=2",
+        "https://www.midjourney.com/jobs/97f7ae32-e17f-48c4-90fe-e9b0607b4f14?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "f816bd7a-1b2c-40ce-ad5b-c1a998f25601",
+      "firstSeenAt": "2026-07-10T20:13:53.071Z",
+      "lastSeenAt": "2026-07-10T20:13:52.769Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/f816bd7a-1b2c-40ce-ad5b-c1a998f25601?index=0",
+        "https://www.midjourney.com/jobs/f816bd7a-1b2c-40ce-ad5b-c1a998f25601?index=1",
+        "https://www.midjourney.com/jobs/f816bd7a-1b2c-40ce-ad5b-c1a998f25601?index=2",
+        "https://www.midjourney.com/jobs/f816bd7a-1b2c-40ce-ad5b-c1a998f25601?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "935fc01d-6b15-4534-b7b1-13fb02e71eed",
+      "firstSeenAt": "2026-07-10T20:13:52.704Z",
+      "lastSeenAt": "2026-07-10T20:13:52.402Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/935fc01d-6b15-4534-b7b1-13fb02e71eed?index=0",
+        "https://www.midjourney.com/jobs/935fc01d-6b15-4534-b7b1-13fb02e71eed?index=1",
+        "https://www.midjourney.com/jobs/935fc01d-6b15-4534-b7b1-13fb02e71eed?index=2",
+        "https://www.midjourney.com/jobs/935fc01d-6b15-4534-b7b1-13fb02e71eed?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "1b5ec1bd-0087-45f0-849c-c79a087ebc29",
+      "firstSeenAt": "2026-07-10T20:13:52.174Z",
+      "lastSeenAt": "2026-07-10T20:13:51.870Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/1b5ec1bd-0087-45f0-849c-c79a087ebc29?index=0",
+        "https://www.midjourney.com/jobs/1b5ec1bd-0087-45f0-849c-c79a087ebc29?index=1",
+        "https://www.midjourney.com/jobs/1b5ec1bd-0087-45f0-849c-c79a087ebc29?index=2",
+        "https://www.midjourney.com/jobs/1b5ec1bd-0087-45f0-849c-c79a087ebc29?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "c51eff38-0b14-499b-ad1d-19a4b74b752c",
+      "firstSeenAt": "2026-07-10T20:13:51.817Z",
+      "lastSeenAt": "2026-07-10T20:13:51.503Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/c51eff38-0b14-499b-ad1d-19a4b74b752c?index=0",
+        "https://www.midjourney.com/jobs/c51eff38-0b14-499b-ad1d-19a4b74b752c?index=1",
+        "https://www.midjourney.com/jobs/c51eff38-0b14-499b-ad1d-19a4b74b752c?index=2",
+        "https://www.midjourney.com/jobs/c51eff38-0b14-499b-ad1d-19a4b74b752c?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5b8f1b49-049e-40be-a099-7d113e4f6ed7",
+      "firstSeenAt": "2026-07-10T20:13:51.352Z",
+      "lastSeenAt": "2026-07-10T20:13:51.037Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5b8f1b49-049e-40be-a099-7d113e4f6ed7?index=0",
+        "https://www.midjourney.com/jobs/5b8f1b49-049e-40be-a099-7d113e4f6ed7?index=1",
+        "https://www.midjourney.com/jobs/5b8f1b49-049e-40be-a099-7d113e4f6ed7?index=2",
+        "https://www.midjourney.com/jobs/5b8f1b49-049e-40be-a099-7d113e4f6ed7?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "990531f8-af32-4140-83fb-c911e0834fe5",
+      "firstSeenAt": "2026-07-10T20:13:50.977Z",
+      "lastSeenAt": "2026-07-10T20:13:50.670Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/990531f8-af32-4140-83fb-c911e0834fe5?index=0",
+        "https://www.midjourney.com/jobs/990531f8-af32-4140-83fb-c911e0834fe5?index=1",
+        "https://www.midjourney.com/jobs/990531f8-af32-4140-83fb-c911e0834fe5?index=2",
+        "https://www.midjourney.com/jobs/990531f8-af32-4140-83fb-c911e0834fe5?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "d0b2bf37-90c5-49ea-8425-a6b5cae2e4cd",
+      "firstSeenAt": "2026-07-10T20:13:50.309Z",
+      "lastSeenAt": "2026-07-10T20:13:50.003Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/d0b2bf37-90c5-49ea-8425-a6b5cae2e4cd?index=0",
+        "https://www.midjourney.com/jobs/d0b2bf37-90c5-49ea-8425-a6b5cae2e4cd?index=1",
+        "https://www.midjourney.com/jobs/d0b2bf37-90c5-49ea-8425-a6b5cae2e4cd?index=2",
+        "https://www.midjourney.com/jobs/d0b2bf37-90c5-49ea-8425-a6b5cae2e4cd?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "56ec77ec-c2d7-4ff4-bf10-3938d2563235",
+      "firstSeenAt": "2026-07-10T20:13:49.843Z",
+      "lastSeenAt": "2026-07-10T20:13:49.537Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/56ec77ec-c2d7-4ff4-bf10-3938d2563235?index=0",
+        "https://www.midjourney.com/jobs/56ec77ec-c2d7-4ff4-bf10-3938d2563235?index=1",
+        "https://www.midjourney.com/jobs/56ec77ec-c2d7-4ff4-bf10-3938d2563235?index=2",
+        "https://www.midjourney.com/jobs/56ec77ec-c2d7-4ff4-bf10-3938d2563235?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5ec15ad9-3394-4091-a8a1-a6cace59715a",
+      "firstSeenAt": "2026-07-10T20:13:49.174Z",
+      "lastSeenAt": "2026-07-10T20:13:48.870Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5ec15ad9-3394-4091-a8a1-a6cace59715a?index=0",
+        "https://www.midjourney.com/jobs/5ec15ad9-3394-4091-a8a1-a6cace59715a?index=1",
+        "https://www.midjourney.com/jobs/5ec15ad9-3394-4091-a8a1-a6cace59715a?index=2",
+        "https://www.midjourney.com/jobs/5ec15ad9-3394-4091-a8a1-a6cace59715a?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5582c56e-dd36-48d1-a817-43487bd8b652",
+      "firstSeenAt": "2026-07-10T20:13:48.817Z",
+      "lastSeenAt": "2026-07-10T20:13:48.504Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5582c56e-dd36-48d1-a817-43487bd8b652?index=0",
+        "https://www.midjourney.com/jobs/5582c56e-dd36-48d1-a817-43487bd8b652?index=1",
+        "https://www.midjourney.com/jobs/5582c56e-dd36-48d1-a817-43487bd8b652?index=2",
+        "https://www.midjourney.com/jobs/5582c56e-dd36-48d1-a817-43487bd8b652?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "75ff7601-3000-4fa5-a66f-05931ab333c7",
+      "firstSeenAt": "2026-07-10T20:13:48.381Z",
+      "lastSeenAt": "2026-07-10T20:13:48.071Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/75ff7601-3000-4fa5-a66f-05931ab333c7?index=0",
+        "https://www.midjourney.com/jobs/75ff7601-3000-4fa5-a66f-05931ab333c7?index=1",
+        "https://www.midjourney.com/jobs/75ff7601-3000-4fa5-a66f-05931ab333c7?index=2",
+        "https://www.midjourney.com/jobs/75ff7601-3000-4fa5-a66f-05931ab333c7?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "d945aa50-90f8-45c5-bdf9-c3bc6cf8e2d9",
+      "firstSeenAt": "2026-07-10T20:13:48.010Z",
+      "lastSeenAt": "2026-07-10T20:13:47.704Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/d945aa50-90f8-45c5-bdf9-c3bc6cf8e2d9?index=0",
+        "https://www.midjourney.com/jobs/d945aa50-90f8-45c5-bdf9-c3bc6cf8e2d9?index=1",
+        "https://www.midjourney.com/jobs/d945aa50-90f8-45c5-bdf9-c3bc6cf8e2d9?index=2",
+        "https://www.midjourney.com/jobs/d945aa50-90f8-45c5-bdf9-c3bc6cf8e2d9?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "1e40ecf4-4a4c-4bc1-8b18-dd6f3b4281b2",
+      "firstSeenAt": "2026-07-10T20:13:43.212Z",
+      "lastSeenAt": "2026-07-10T20:13:42.903Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/1e40ecf4-4a4c-4bc1-8b18-dd6f3b4281b2?index=0",
+        "https://www.midjourney.com/jobs/1e40ecf4-4a4c-4bc1-8b18-dd6f3b4281b2?index=1",
+        "https://www.midjourney.com/jobs/1e40ecf4-4a4c-4bc1-8b18-dd6f3b4281b2?index=2",
+        "https://www.midjourney.com/jobs/1e40ecf4-4a4c-4bc1-8b18-dd6f3b4281b2?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "3322def8-ad9f-4d17-8d3d-cce76ca73dbe",
+      "firstSeenAt": "2026-07-10T20:13:42.810Z",
+      "lastSeenAt": "2026-07-10T20:13:42.502Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/3322def8-ad9f-4d17-8d3d-cce76ca73dbe?index=0",
+        "https://www.midjourney.com/jobs/3322def8-ad9f-4d17-8d3d-cce76ca73dbe?index=1",
+        "https://www.midjourney.com/jobs/3322def8-ad9f-4d17-8d3d-cce76ca73dbe?index=2",
+        "https://www.midjourney.com/jobs/3322def8-ad9f-4d17-8d3d-cce76ca73dbe?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "0e7d0512-2a7e-47fd-ac35-3c45968f1bc4",
+      "firstSeenAt": "2026-07-10T20:13:42.315Z",
+      "lastSeenAt": "2026-07-10T20:13:42.002Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/0e7d0512-2a7e-47fd-ac35-3c45968f1bc4?index=0",
+        "https://www.midjourney.com/jobs/0e7d0512-2a7e-47fd-ac35-3c45968f1bc4?index=1",
+        "https://www.midjourney.com/jobs/0e7d0512-2a7e-47fd-ac35-3c45968f1bc4?index=2",
+        "https://www.midjourney.com/jobs/0e7d0512-2a7e-47fd-ac35-3c45968f1bc4?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "54e0c78e-0426-4a7e-9f63-a849925a846b",
+      "firstSeenAt": "2026-07-10T20:13:41.895Z",
+      "lastSeenAt": "2026-07-10T20:13:41.593Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/54e0c78e-0426-4a7e-9f63-a849925a846b?index=0",
+        "https://www.midjourney.com/jobs/54e0c78e-0426-4a7e-9f63-a849925a846b?index=1",
+        "https://www.midjourney.com/jobs/54e0c78e-0426-4a7e-9f63-a849925a846b?index=2",
+        "https://www.midjourney.com/jobs/54e0c78e-0426-4a7e-9f63-a849925a846b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "fcbdae56-981f-4032-84b4-744972f970f8",
+      "firstSeenAt": "2026-07-10T20:13:41.415Z",
+      "lastSeenAt": "2026-07-10T20:13:41.103Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/fcbdae56-981f-4032-84b4-744972f970f8?index=0",
+        "https://www.midjourney.com/jobs/fcbdae56-981f-4032-84b4-744972f970f8?index=1",
+        "https://www.midjourney.com/jobs/fcbdae56-981f-4032-84b4-744972f970f8?index=2",
+        "https://www.midjourney.com/jobs/fcbdae56-981f-4032-84b4-744972f970f8?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "4652a5ba-8f19-4bda-8fbc-a0ef135c8c4b",
+      "firstSeenAt": "2026-07-10T20:13:41.074Z",
+      "lastSeenAt": "2026-07-10T20:13:40.770Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/4652a5ba-8f19-4bda-8fbc-a0ef135c8c4b?index=0",
+        "https://www.midjourney.com/jobs/4652a5ba-8f19-4bda-8fbc-a0ef135c8c4b?index=1",
+        "https://www.midjourney.com/jobs/4652a5ba-8f19-4bda-8fbc-a0ef135c8c4b?index=2",
+        "https://www.midjourney.com/jobs/4652a5ba-8f19-4bda-8fbc-a0ef135c8c4b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5c5e5ab3-bab8-4e63-bdd2-ccca62465cc3",
+      "firstSeenAt": "2026-07-10T20:13:40.546Z",
+      "lastSeenAt": "2026-07-10T20:13:40.236Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5c5e5ab3-bab8-4e63-bdd2-ccca62465cc3?index=0",
+        "https://www.midjourney.com/jobs/5c5e5ab3-bab8-4e63-bdd2-ccca62465cc3?index=1",
+        "https://www.midjourney.com/jobs/5c5e5ab3-bab8-4e63-bdd2-ccca62465cc3?index=2",
+        "https://www.midjourney.com/jobs/5c5e5ab3-bab8-4e63-bdd2-ccca62465cc3?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5f9f0d89-2234-42e6-9a22-ace8be9ed4dd",
+      "firstSeenAt": "2026-07-10T20:13:39.942Z",
+      "lastSeenAt": "2026-07-10T20:13:39.635Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5f9f0d89-2234-42e6-9a22-ace8be9ed4dd?index=0",
+        "https://www.midjourney.com/jobs/5f9f0d89-2234-42e6-9a22-ace8be9ed4dd?index=1",
+        "https://www.midjourney.com/jobs/5f9f0d89-2234-42e6-9a22-ace8be9ed4dd?index=2",
+        "https://www.midjourney.com/jobs/5f9f0d89-2234-42e6-9a22-ace8be9ed4dd?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "256ca240-b934-4157-a64d-7490c6210663",
+      "firstSeenAt": "2026-07-10T20:13:39.539Z",
+      "lastSeenAt": "2026-07-10T20:13:39.236Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/256ca240-b934-4157-a64d-7490c6210663?index=0",
+        "https://www.midjourney.com/jobs/256ca240-b934-4157-a64d-7490c6210663?index=1",
+        "https://www.midjourney.com/jobs/256ca240-b934-4157-a64d-7490c6210663?index=2",
+        "https://www.midjourney.com/jobs/256ca240-b934-4157-a64d-7490c6210663?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "fa9985f5-12e9-445a-a948-0a30b0deea6b",
+      "firstSeenAt": "2026-07-10T20:13:39.043Z",
+      "lastSeenAt": "2026-07-10T20:13:38.736Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/fa9985f5-12e9-445a-a948-0a30b0deea6b?index=0",
+        "https://www.midjourney.com/jobs/fa9985f5-12e9-445a-a948-0a30b0deea6b?index=1",
+        "https://www.midjourney.com/jobs/fa9985f5-12e9-445a-a948-0a30b0deea6b?index=2",
+        "https://www.midjourney.com/jobs/fa9985f5-12e9-445a-a948-0a30b0deea6b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "7b7d9380-2359-48c0-a4b4-db9020d870eb",
+      "firstSeenAt": "2026-07-10T20:13:38.671Z",
+      "lastSeenAt": "2026-07-10T20:13:38.369Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/7b7d9380-2359-48c0-a4b4-db9020d870eb?index=0",
+        "https://www.midjourney.com/jobs/7b7d9380-2359-48c0-a4b4-db9020d870eb?index=1",
+        "https://www.midjourney.com/jobs/7b7d9380-2359-48c0-a4b4-db9020d870eb?index=2",
+        "https://www.midjourney.com/jobs/7b7d9380-2359-48c0-a4b4-db9020d870eb?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "8714797f-8e88-4b5b-a90e-ff55948803d1",
+      "firstSeenAt": "2026-07-10T20:13:38.115Z",
+      "lastSeenAt": "2026-07-10T20:13:37.803Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/8714797f-8e88-4b5b-a90e-ff55948803d1?index=0",
+        "https://www.midjourney.com/jobs/8714797f-8e88-4b5b-a90e-ff55948803d1?index=1",
+        "https://www.midjourney.com/jobs/8714797f-8e88-4b5b-a90e-ff55948803d1?index=2",
+        "https://www.midjourney.com/jobs/8714797f-8e88-4b5b-a90e-ff55948803d1?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "0cb1be44-a29b-4d22-b6cd-2a72da594e32",
+      "firstSeenAt": "2026-07-10T20:13:37.713Z",
+      "lastSeenAt": "2026-07-10T20:13:37.402Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/0cb1be44-a29b-4d22-b6cd-2a72da594e32?index=0",
+        "https://www.midjourney.com/jobs/0cb1be44-a29b-4d22-b6cd-2a72da594e32?index=1",
+        "https://www.midjourney.com/jobs/0cb1be44-a29b-4d22-b6cd-2a72da594e32?index=2",
+        "https://www.midjourney.com/jobs/0cb1be44-a29b-4d22-b6cd-2a72da594e32?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "e3623c4b-203b-4388-ade3-784f2c3397c8",
+      "firstSeenAt": "2026-07-10T20:13:37.187Z",
+      "lastSeenAt": "2026-07-10T20:13:36.869Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/e3623c4b-203b-4388-ade3-784f2c3397c8?index=0",
+        "https://www.midjourney.com/jobs/e3623c4b-203b-4388-ade3-784f2c3397c8?index=1",
+        "https://www.midjourney.com/jobs/e3623c4b-203b-4388-ade3-784f2c3397c8?index=2",
+        "https://www.midjourney.com/jobs/e3623c4b-203b-4388-ade3-784f2c3397c8?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "d6599a64-60b1-43f4-9736-09b0bc52c139",
+      "firstSeenAt": "2026-07-10T20:13:36.613Z",
+      "lastSeenAt": "2026-07-10T20:13:36.302Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/d6599a64-60b1-43f4-9736-09b0bc52c139?index=0",
+        "https://www.midjourney.com/jobs/d6599a64-60b1-43f4-9736-09b0bc52c139?index=1",
+        "https://www.midjourney.com/jobs/d6599a64-60b1-43f4-9736-09b0bc52c139?index=2",
+        "https://www.midjourney.com/jobs/d6599a64-60b1-43f4-9736-09b0bc52c139?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "809c039d-7fb9-4668-bbea-c51d89ccf106",
+      "firstSeenAt": "2026-07-10T20:13:36.178Z",
+      "lastSeenAt": "2026-07-10T20:13:35.870Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/809c039d-7fb9-4668-bbea-c51d89ccf106?index=0",
+        "https://www.midjourney.com/jobs/809c039d-7fb9-4668-bbea-c51d89ccf106?index=1",
+        "https://www.midjourney.com/jobs/809c039d-7fb9-4668-bbea-c51d89ccf106?index=2",
+        "https://www.midjourney.com/jobs/809c039d-7fb9-4668-bbea-c51d89ccf106?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "a46c20a7-f1fa-4810-ab7a-62ac3a0a5acc",
+      "firstSeenAt": "2026-07-10T20:13:35.796Z",
+      "lastSeenAt": "2026-07-10T20:13:35.491Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/a46c20a7-f1fa-4810-ab7a-62ac3a0a5acc?index=0",
+        "https://www.midjourney.com/jobs/a46c20a7-f1fa-4810-ab7a-62ac3a0a5acc?index=1",
+        "https://www.midjourney.com/jobs/a46c20a7-f1fa-4810-ab7a-62ac3a0a5acc?index=2",
+        "https://www.midjourney.com/jobs/a46c20a7-f1fa-4810-ab7a-62ac3a0a5acc?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "66455184-2707-42d8-b7d4-339b050a39cc",
+      "firstSeenAt": "2026-07-10T20:13:35.311Z",
+      "lastSeenAt": "2026-07-10T20:13:35.003Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/66455184-2707-42d8-b7d4-339b050a39cc?index=0",
+        "https://www.midjourney.com/jobs/66455184-2707-42d8-b7d4-339b050a39cc?index=1",
+        "https://www.midjourney.com/jobs/66455184-2707-42d8-b7d4-339b050a39cc?index=2",
+        "https://www.midjourney.com/jobs/66455184-2707-42d8-b7d4-339b050a39cc?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "583f53e4-c8fa-4a58-bac3-2a32a32e6a41",
+      "firstSeenAt": "2026-07-10T20:13:34.900Z",
+      "lastSeenAt": "2026-07-10T20:13:34.591Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/583f53e4-c8fa-4a58-bac3-2a32a32e6a41?index=0",
+        "https://www.midjourney.com/jobs/583f53e4-c8fa-4a58-bac3-2a32a32e6a41?index=1",
+        "https://www.midjourney.com/jobs/583f53e4-c8fa-4a58-bac3-2a32a32e6a41?index=2",
+        "https://www.midjourney.com/jobs/583f53e4-c8fa-4a58-bac3-2a32a32e6a41?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "8ed3264f-58f5-4717-ad87-8d0f7a5d66d1",
+      "firstSeenAt": "2026-07-10T20:13:34.272Z",
+      "lastSeenAt": "2026-07-10T20:13:33.970Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/8ed3264f-58f5-4717-ad87-8d0f7a5d66d1?index=0",
+        "https://www.midjourney.com/jobs/8ed3264f-58f5-4717-ad87-8d0f7a5d66d1?index=1",
+        "https://www.midjourney.com/jobs/8ed3264f-58f5-4717-ad87-8d0f7a5d66d1?index=2",
+        "https://www.midjourney.com/jobs/8ed3264f-58f5-4717-ad87-8d0f7a5d66d1?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5f1b9488-dd97-4b27-a317-d39897abb03a",
+      "firstSeenAt": "2026-07-10T20:13:33.776Z",
+      "lastSeenAt": "2026-07-10T20:13:33.470Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5f1b9488-dd97-4b27-a317-d39897abb03a?index=0",
+        "https://www.midjourney.com/jobs/5f1b9488-dd97-4b27-a317-d39897abb03a?index=1",
+        "https://www.midjourney.com/jobs/5f1b9488-dd97-4b27-a317-d39897abb03a?index=2",
+        "https://www.midjourney.com/jobs/5f1b9488-dd97-4b27-a317-d39897abb03a?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "bfb342d6-f794-4f0d-92d7-70a4108272cf",
+      "firstSeenAt": "2026-07-10T20:13:33.174Z",
+      "lastSeenAt": "2026-07-10T20:13:32.870Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/bfb342d6-f794-4f0d-92d7-70a4108272cf?index=0",
+        "https://www.midjourney.com/jobs/bfb342d6-f794-4f0d-92d7-70a4108272cf?index=1",
+        "https://www.midjourney.com/jobs/bfb342d6-f794-4f0d-92d7-70a4108272cf?index=2",
+        "https://www.midjourney.com/jobs/bfb342d6-f794-4f0d-92d7-70a4108272cf?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "ccd957ad-fc7f-434e-b1d8-c29177342a63",
+      "firstSeenAt": "2026-07-10T20:13:32.585Z",
+      "lastSeenAt": "2026-07-10T20:13:32.269Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/ccd957ad-fc7f-434e-b1d8-c29177342a63?index=0",
+        "https://www.midjourney.com/jobs/ccd957ad-fc7f-434e-b1d8-c29177342a63?index=1",
+        "https://www.midjourney.com/jobs/ccd957ad-fc7f-434e-b1d8-c29177342a63?index=2",
+        "https://www.midjourney.com/jobs/ccd957ad-fc7f-434e-b1d8-c29177342a63?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "2c3cb34b-11b6-4baf-a716-6d2be9e64aba",
+      "firstSeenAt": "2026-07-10T20:13:32.200Z",
+      "lastSeenAt": "2026-07-10T20:13:31.890Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/2c3cb34b-11b6-4baf-a716-6d2be9e64aba?index=0",
+        "https://www.midjourney.com/jobs/2c3cb34b-11b6-4baf-a716-6d2be9e64aba?index=1",
+        "https://www.midjourney.com/jobs/2c3cb34b-11b6-4baf-a716-6d2be9e64aba?index=2",
+        "https://www.midjourney.com/jobs/2c3cb34b-11b6-4baf-a716-6d2be9e64aba?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "65569225-e3b2-4b12-a70d-e7e8e66e035a",
+      "firstSeenAt": "2026-07-10T20:13:31.604Z",
+      "lastSeenAt": "2026-07-10T20:13:31.303Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/65569225-e3b2-4b12-a70d-e7e8e66e035a?index=0",
+        "https://www.midjourney.com/jobs/65569225-e3b2-4b12-a70d-e7e8e66e035a?index=1",
+        "https://www.midjourney.com/jobs/65569225-e3b2-4b12-a70d-e7e8e66e035a?index=2",
+        "https://www.midjourney.com/jobs/65569225-e3b2-4b12-a70d-e7e8e66e035a?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "a68d147f-0da1-466e-b0da-647a63bb9847",
+      "firstSeenAt": "2026-07-10T20:13:30.878Z",
+      "lastSeenAt": "2026-07-10T20:13:30.569Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/a68d147f-0da1-466e-b0da-647a63bb9847?index=0",
+        "https://www.midjourney.com/jobs/a68d147f-0da1-466e-b0da-647a63bb9847?index=1",
+        "https://www.midjourney.com/jobs/a68d147f-0da1-466e-b0da-647a63bb9847?index=2",
+        "https://www.midjourney.com/jobs/a68d147f-0da1-466e-b0da-647a63bb9847?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "e842a35a-c045-40b8-a840-6770a377f569",
+      "firstSeenAt": "2026-07-10T20:13:30.475Z",
+      "lastSeenAt": "2026-07-10T20:13:30.170Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/e842a35a-c045-40b8-a840-6770a377f569?index=0",
+        "https://www.midjourney.com/jobs/e842a35a-c045-40b8-a840-6770a377f569?index=1",
+        "https://www.midjourney.com/jobs/e842a35a-c045-40b8-a840-6770a377f569?index=2",
+        "https://www.midjourney.com/jobs/e842a35a-c045-40b8-a840-6770a377f569?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "1db0e52c-39b9-4dad-8dc2-38757c898d99",
+      "firstSeenAt": "2026-07-10T20:13:29.715Z",
+      "lastSeenAt": "2026-07-10T20:13:29.402Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/1db0e52c-39b9-4dad-8dc2-38757c898d99?index=0",
+        "https://www.midjourney.com/jobs/1db0e52c-39b9-4dad-8dc2-38757c898d99?index=1",
+        "https://www.midjourney.com/jobs/1db0e52c-39b9-4dad-8dc2-38757c898d99?index=2",
+        "https://www.midjourney.com/jobs/1db0e52c-39b9-4dad-8dc2-38757c898d99?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "f8ea5c7e-8db3-46ae-b133-4cd24dd4774c",
+      "firstSeenAt": "2026-07-10T20:13:29.174Z",
+      "lastSeenAt": "2026-07-10T20:13:28.870Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/f8ea5c7e-8db3-46ae-b133-4cd24dd4774c?index=0",
+        "https://www.midjourney.com/jobs/f8ea5c7e-8db3-46ae-b133-4cd24dd4774c?index=1",
+        "https://www.midjourney.com/jobs/f8ea5c7e-8db3-46ae-b133-4cd24dd4774c?index=2",
+        "https://www.midjourney.com/jobs/f8ea5c7e-8db3-46ae-b133-4cd24dd4774c?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "083dd753-dfa5-4cc4-976f-0e69d580d0ea",
+      "firstSeenAt": "2026-07-10T20:13:28.711Z",
+      "lastSeenAt": "2026-07-10T20:13:28.402Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/083dd753-dfa5-4cc4-976f-0e69d580d0ea?index=0",
+        "https://www.midjourney.com/jobs/083dd753-dfa5-4cc4-976f-0e69d580d0ea?index=1",
+        "https://www.midjourney.com/jobs/083dd753-dfa5-4cc4-976f-0e69d580d0ea?index=2",
+        "https://www.midjourney.com/jobs/083dd753-dfa5-4cc4-976f-0e69d580d0ea?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "1632cadd-d07b-479c-b24c-e989c795d3ac",
+      "firstSeenAt": "2026-07-10T20:13:28.005Z",
+      "lastSeenAt": "2026-07-10T20:13:27.702Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/1632cadd-d07b-479c-b24c-e989c795d3ac?index=0",
+        "https://www.midjourney.com/jobs/1632cadd-d07b-479c-b24c-e989c795d3ac?index=1",
+        "https://www.midjourney.com/jobs/1632cadd-d07b-479c-b24c-e989c795d3ac?index=2",
+        "https://www.midjourney.com/jobs/1632cadd-d07b-479c-b24c-e989c795d3ac?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "feb8c7fc-7da3-4fd6-8132-7a4d92d32a27",
+      "firstSeenAt": "2026-07-10T20:13:27.580Z",
+      "lastSeenAt": "2026-07-10T20:13:27.268Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/feb8c7fc-7da3-4fd6-8132-7a4d92d32a27?index=0",
+        "https://www.midjourney.com/jobs/feb8c7fc-7da3-4fd6-8132-7a4d92d32a27?index=1",
+        "https://www.midjourney.com/jobs/feb8c7fc-7da3-4fd6-8132-7a4d92d32a27?index=2",
+        "https://www.midjourney.com/jobs/feb8c7fc-7da3-4fd6-8132-7a4d92d32a27?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "a3609415-eb27-4a38-94f6-b355aa0e7d46",
+      "firstSeenAt": "2026-07-10T20:13:26.978Z",
+      "lastSeenAt": "2026-07-10T20:13:26.669Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/a3609415-eb27-4a38-94f6-b355aa0e7d46?index=0",
+        "https://www.midjourney.com/jobs/a3609415-eb27-4a38-94f6-b355aa0e7d46?index=1",
+        "https://www.midjourney.com/jobs/a3609415-eb27-4a38-94f6-b355aa0e7d46?index=2",
+        "https://www.midjourney.com/jobs/a3609415-eb27-4a38-94f6-b355aa0e7d46?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "a392e4a6-4e11-40a5-a07a-3ab02ac4965b",
+      "firstSeenAt": "2026-07-10T20:13:26.484Z",
+      "lastSeenAt": "2026-07-10T20:13:26.169Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/a392e4a6-4e11-40a5-a07a-3ab02ac4965b?index=0",
+        "https://www.midjourney.com/jobs/a392e4a6-4e11-40a5-a07a-3ab02ac4965b?index=1",
+        "https://www.midjourney.com/jobs/a392e4a6-4e11-40a5-a07a-3ab02ac4965b?index=2",
+        "https://www.midjourney.com/jobs/a392e4a6-4e11-40a5-a07a-3ab02ac4965b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "cbaa4a35-58d5-44d8-a036-8d1108e857e2",
+      "firstSeenAt": "2026-07-10T20:13:25.817Z",
+      "lastSeenAt": "2026-07-10T20:13:25.503Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/cbaa4a35-58d5-44d8-a036-8d1108e857e2?index=0",
+        "https://www.midjourney.com/jobs/cbaa4a35-58d5-44d8-a036-8d1108e857e2?index=1",
+        "https://www.midjourney.com/jobs/cbaa4a35-58d5-44d8-a036-8d1108e857e2?index=2",
+        "https://www.midjourney.com/jobs/cbaa4a35-58d5-44d8-a036-8d1108e857e2?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "e50916da-0cd8-4e3b-bc6d-32ad4b0abefa",
+      "firstSeenAt": "2026-07-10T20:13:25.414Z",
+      "lastSeenAt": "2026-07-10T20:13:25.101Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/e50916da-0cd8-4e3b-bc6d-32ad4b0abefa?index=0",
+        "https://www.midjourney.com/jobs/e50916da-0cd8-4e3b-bc6d-32ad4b0abefa?index=1",
+        "https://www.midjourney.com/jobs/e50916da-0cd8-4e3b-bc6d-32ad4b0abefa?index=2",
+        "https://www.midjourney.com/jobs/e50916da-0cd8-4e3b-bc6d-32ad4b0abefa?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "ba5bf4cb-97d6-43c5-b528-1d64390a82b0",
+      "firstSeenAt": "2026-07-10T20:13:24.608Z",
+      "lastSeenAt": "2026-07-10T20:13:24.302Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/ba5bf4cb-97d6-43c5-b528-1d64390a82b0?index=0",
+        "https://www.midjourney.com/jobs/ba5bf4cb-97d6-43c5-b528-1d64390a82b0?index=1",
+        "https://www.midjourney.com/jobs/ba5bf4cb-97d6-43c5-b528-1d64390a82b0?index=2",
+        "https://www.midjourney.com/jobs/ba5bf4cb-97d6-43c5-b528-1d64390a82b0?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "9a7d13df-b2d9-458c-998d-74ce11dae180",
+      "firstSeenAt": "2026-07-10T20:13:24.003Z",
+      "lastSeenAt": "2026-07-10T20:13:23.702Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/9a7d13df-b2d9-458c-998d-74ce11dae180?index=0",
+        "https://www.midjourney.com/jobs/9a7d13df-b2d9-458c-998d-74ce11dae180?index=1",
+        "https://www.midjourney.com/jobs/9a7d13df-b2d9-458c-998d-74ce11dae180?index=2",
+        "https://www.midjourney.com/jobs/9a7d13df-b2d9-458c-998d-74ce11dae180?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "fe6fde30-b3b3-406c-ba93-ecaa656c3627",
+      "firstSeenAt": "2026-07-10T20:13:23.238Z",
+      "lastSeenAt": "2026-07-10T20:13:22.937Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/fe6fde30-b3b3-406c-ba93-ecaa656c3627?index=0",
+        "https://www.midjourney.com/jobs/fe6fde30-b3b3-406c-ba93-ecaa656c3627?index=1",
+        "https://www.midjourney.com/jobs/fe6fde30-b3b3-406c-ba93-ecaa656c3627?index=2",
+        "https://www.midjourney.com/jobs/fe6fde30-b3b3-406c-ba93-ecaa656c3627?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5a2e1adb-4e68-40bc-bb58-834fe9f4c587",
+      "firstSeenAt": "2026-07-10T20:13:22.734Z",
+      "lastSeenAt": "2026-07-10T20:13:22.425Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5a2e1adb-4e68-40bc-bb58-834fe9f4c587?index=0",
+        "https://www.midjourney.com/jobs/5a2e1adb-4e68-40bc-bb58-834fe9f4c587?index=1",
+        "https://www.midjourney.com/jobs/5a2e1adb-4e68-40bc-bb58-834fe9f4c587?index=2",
+        "https://www.midjourney.com/jobs/5a2e1adb-4e68-40bc-bb58-834fe9f4c587?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5f4d6639-3f3b-449d-bcba-1d68bdba396b",
+      "firstSeenAt": "2026-07-10T20:13:22.146Z",
+      "lastSeenAt": "2026-07-10T20:13:21.835Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5f4d6639-3f3b-449d-bcba-1d68bdba396b?index=0",
+        "https://www.midjourney.com/jobs/5f4d6639-3f3b-449d-bcba-1d68bdba396b?index=1",
+        "https://www.midjourney.com/jobs/5f4d6639-3f3b-449d-bcba-1d68bdba396b?index=2",
+        "https://www.midjourney.com/jobs/5f4d6639-3f3b-449d-bcba-1d68bdba396b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "a5cada87-a2ce-4d7a-9120-498bbd6e1254",
+      "firstSeenAt": "2026-07-10T20:13:21.571Z",
+      "lastSeenAt": "2026-07-10T20:13:21.269Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/a5cada87-a2ce-4d7a-9120-498bbd6e1254?index=0",
+        "https://www.midjourney.com/jobs/a5cada87-a2ce-4d7a-9120-498bbd6e1254?index=1",
+        "https://www.midjourney.com/jobs/a5cada87-a2ce-4d7a-9120-498bbd6e1254?index=2",
+        "https://www.midjourney.com/jobs/a5cada87-a2ce-4d7a-9120-498bbd6e1254?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "7bcbf0c1-58a3-467e-b63a-1ba2aaf1813f",
+      "firstSeenAt": "2026-07-10T20:13:21.015Z",
+      "lastSeenAt": "2026-07-10T20:13:20.702Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/7bcbf0c1-58a3-467e-b63a-1ba2aaf1813f?index=0",
+        "https://www.midjourney.com/jobs/7bcbf0c1-58a3-467e-b63a-1ba2aaf1813f?index=1",
+        "https://www.midjourney.com/jobs/7bcbf0c1-58a3-467e-b63a-1ba2aaf1813f?index=2",
+        "https://www.midjourney.com/jobs/7bcbf0c1-58a3-467e-b63a-1ba2aaf1813f?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "0b4a32df-80ff-41ba-82a2-9536bc573a36",
+      "firstSeenAt": "2026-07-10T20:13:20.411Z",
+      "lastSeenAt": "2026-07-10T20:13:20.102Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/0b4a32df-80ff-41ba-82a2-9536bc573a36?index=0",
+        "https://www.midjourney.com/jobs/0b4a32df-80ff-41ba-82a2-9536bc573a36?index=1",
+        "https://www.midjourney.com/jobs/0b4a32df-80ff-41ba-82a2-9536bc573a36?index=2",
+        "https://www.midjourney.com/jobs/0b4a32df-80ff-41ba-82a2-9536bc573a36?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "2ed8ab4b-6620-45d0-a126-3e03e4d4d9ab",
+      "firstSeenAt": "2026-07-10T20:13:19.776Z",
+      "lastSeenAt": "2026-07-10T20:13:19.470Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/2ed8ab4b-6620-45d0-a126-3e03e4d4d9ab?index=0",
+        "https://www.midjourney.com/jobs/2ed8ab4b-6620-45d0-a126-3e03e4d4d9ab?index=1",
+        "https://www.midjourney.com/jobs/2ed8ab4b-6620-45d0-a126-3e03e4d4d9ab?index=2",
+        "https://www.midjourney.com/jobs/2ed8ab4b-6620-45d0-a126-3e03e4d4d9ab?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "f7207db8-d3b2-4a5b-9ec3-54d5829d5623",
+      "firstSeenAt": "2026-07-10T20:13:19.218Z",
+      "lastSeenAt": "2026-07-10T20:13:18.902Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/f7207db8-d3b2-4a5b-9ec3-54d5829d5623?index=0",
+        "https://www.midjourney.com/jobs/f7207db8-d3b2-4a5b-9ec3-54d5829d5623?index=1",
+        "https://www.midjourney.com/jobs/f7207db8-d3b2-4a5b-9ec3-54d5829d5623?index=2",
+        "https://www.midjourney.com/jobs/f7207db8-d3b2-4a5b-9ec3-54d5829d5623?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "013c5dc3-9122-47d3-8b37-8fc4163b7486",
+      "firstSeenAt": "2026-07-10T20:13:18.537Z",
+      "lastSeenAt": "2026-07-10T20:13:18.235Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/013c5dc3-9122-47d3-8b37-8fc4163b7486?index=0",
+        "https://www.midjourney.com/jobs/013c5dc3-9122-47d3-8b37-8fc4163b7486?index=1",
+        "https://www.midjourney.com/jobs/013c5dc3-9122-47d3-8b37-8fc4163b7486?index=2",
+        "https://www.midjourney.com/jobs/013c5dc3-9122-47d3-8b37-8fc4163b7486?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "faf142b6-daab-40b7-bd1b-1a86f2e0f25e",
+      "firstSeenAt": "2026-07-10T20:13:18.104Z",
+      "lastSeenAt": "2026-07-10T20:13:17.803Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/faf142b6-daab-40b7-bd1b-1a86f2e0f25e?index=0",
+        "https://www.midjourney.com/jobs/faf142b6-daab-40b7-bd1b-1a86f2e0f25e?index=1",
+        "https://www.midjourney.com/jobs/faf142b6-daab-40b7-bd1b-1a86f2e0f25e?index=2",
+        "https://www.midjourney.com/jobs/faf142b6-daab-40b7-bd1b-1a86f2e0f25e?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "395e3ccd-fbfd-453e-b016-1687b62f2b8d",
+      "firstSeenAt": "2026-07-10T20:13:17.547Z",
+      "lastSeenAt": "2026-07-10T20:13:17.237Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/395e3ccd-fbfd-453e-b016-1687b62f2b8d?index=0",
+        "https://www.midjourney.com/jobs/395e3ccd-fbfd-453e-b016-1687b62f2b8d?index=1",
+        "https://www.midjourney.com/jobs/395e3ccd-fbfd-453e-b016-1687b62f2b8d?index=2",
+        "https://www.midjourney.com/jobs/395e3ccd-fbfd-453e-b016-1687b62f2b8d?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "282f4a70-1288-4cad-9eee-c0635748c88f",
+      "firstSeenAt": "2026-07-10T20:13:16.943Z",
+      "lastSeenAt": "2026-07-10T20:13:16.636Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/282f4a70-1288-4cad-9eee-c0635748c88f?index=0",
+        "https://www.midjourney.com/jobs/282f4a70-1288-4cad-9eee-c0635748c88f?index=1",
+        "https://www.midjourney.com/jobs/282f4a70-1288-4cad-9eee-c0635748c88f?index=2",
+        "https://www.midjourney.com/jobs/282f4a70-1288-4cad-9eee-c0635748c88f?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "0dd03139-ff32-48f2-b5be-42b7a5a6618e",
+      "firstSeenAt": "2026-07-10T20:13:16.305Z",
+      "lastSeenAt": "2026-07-10T20:13:16.003Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/0dd03139-ff32-48f2-b5be-42b7a5a6618e?index=0",
+        "https://www.midjourney.com/jobs/0dd03139-ff32-48f2-b5be-42b7a5a6618e?index=1",
+        "https://www.midjourney.com/jobs/0dd03139-ff32-48f2-b5be-42b7a5a6618e?index=2",
+        "https://www.midjourney.com/jobs/0dd03139-ff32-48f2-b5be-42b7a5a6618e?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "d27c9c0d-ac64-4c2d-87ec-c93603d9f642",
+      "firstSeenAt": "2026-07-10T20:13:15.685Z",
+      "lastSeenAt": "2026-07-10T20:13:15.371Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/d27c9c0d-ac64-4c2d-87ec-c93603d9f642?index=0",
+        "https://www.midjourney.com/jobs/d27c9c0d-ac64-4c2d-87ec-c93603d9f642?index=1",
+        "https://www.midjourney.com/jobs/d27c9c0d-ac64-4c2d-87ec-c93603d9f642?index=2",
+        "https://www.midjourney.com/jobs/d27c9c0d-ac64-4c2d-87ec-c93603d9f642?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "c5c857c4-abe6-462a-9aef-b19f08be1935",
+      "firstSeenAt": "2026-07-10T20:13:15.283Z",
+      "lastSeenAt": "2026-07-10T20:13:14.969Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/c5c857c4-abe6-462a-9aef-b19f08be1935?index=0",
+        "https://www.midjourney.com/jobs/c5c857c4-abe6-462a-9aef-b19f08be1935?index=1",
+        "https://www.midjourney.com/jobs/c5c857c4-abe6-462a-9aef-b19f08be1935?index=2",
+        "https://www.midjourney.com/jobs/c5c857c4-abe6-462a-9aef-b19f08be1935?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "f910a779-0389-4604-bbec-da0142221c33",
+      "firstSeenAt": "2026-07-10T20:13:14.616Z",
+      "lastSeenAt": "2026-07-10T20:13:14.302Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/f910a779-0389-4604-bbec-da0142221c33?index=0",
+        "https://www.midjourney.com/jobs/f910a779-0389-4604-bbec-da0142221c33?index=1",
+        "https://www.midjourney.com/jobs/f910a779-0389-4604-bbec-da0142221c33?index=2",
+        "https://www.midjourney.com/jobs/f910a779-0389-4604-bbec-da0142221c33?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "3a7fd43f-fd55-4cb9-9995-b6f09b8c6f8d",
+      "firstSeenAt": "2026-07-10T20:13:14.012Z",
+      "lastSeenAt": "2026-07-10T20:13:13.701Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/3a7fd43f-fd55-4cb9-9995-b6f09b8c6f8d?index=0",
+        "https://www.midjourney.com/jobs/3a7fd43f-fd55-4cb9-9995-b6f09b8c6f8d?index=1",
+        "https://www.midjourney.com/jobs/3a7fd43f-fd55-4cb9-9995-b6f09b8c6f8d?index=2",
+        "https://www.midjourney.com/jobs/3a7fd43f-fd55-4cb9-9995-b6f09b8c6f8d?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "1d08957c-eb4d-4ad0-80f3-130d49130cbb",
+      "firstSeenAt": "2026-07-10T20:13:13.611Z",
+      "lastSeenAt": "2026-07-10T20:13:13.303Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/1d08957c-eb4d-4ad0-80f3-130d49130cbb?index=0",
+        "https://www.midjourney.com/jobs/1d08957c-eb4d-4ad0-80f3-130d49130cbb?index=1",
+        "https://www.midjourney.com/jobs/1d08957c-eb4d-4ad0-80f3-130d49130cbb?index=2",
+        "https://www.midjourney.com/jobs/1d08957c-eb4d-4ad0-80f3-130d49130cbb?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5ecdc524-e2d9-4c12-947b-fcf3da657e39",
+      "firstSeenAt": "2026-07-10T20:13:13.160Z",
+      "lastSeenAt": "2026-07-10T20:13:12.858Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5ecdc524-e2d9-4c12-947b-fcf3da657e39?index=0",
+        "https://www.midjourney.com/jobs/5ecdc524-e2d9-4c12-947b-fcf3da657e39?index=1",
+        "https://www.midjourney.com/jobs/5ecdc524-e2d9-4c12-947b-fcf3da657e39?index=2",
+        "https://www.midjourney.com/jobs/5ecdc524-e2d9-4c12-947b-fcf3da657e39?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "63c29504-430c-442d-b7ef-2f0bb6b30cbd",
+      "firstSeenAt": "2026-07-10T20:13:12.501Z",
+      "lastSeenAt": "2026-07-10T20:13:12.198Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/63c29504-430c-442d-b7ef-2f0bb6b30cbd?index=0",
+        "https://www.midjourney.com/jobs/63c29504-430c-442d-b7ef-2f0bb6b30cbd?index=1",
+        "https://www.midjourney.com/jobs/63c29504-430c-442d-b7ef-2f0bb6b30cbd?index=2",
+        "https://www.midjourney.com/jobs/63c29504-430c-442d-b7ef-2f0bb6b30cbd?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "c0614484-5f1d-42da-b511-34a879385480",
+      "firstSeenAt": "2026-07-10T20:13:11.827Z",
+      "lastSeenAt": "2026-07-10T20:13:11.524Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/c0614484-5f1d-42da-b511-34a879385480?index=0",
+        "https://www.midjourney.com/jobs/c0614484-5f1d-42da-b511-34a879385480?index=1",
+        "https://www.midjourney.com/jobs/c0614484-5f1d-42da-b511-34a879385480?index=2",
+        "https://www.midjourney.com/jobs/c0614484-5f1d-42da-b511-34a879385480?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "f8548b34-518d-4f17-8d4d-58fd2ee2b875",
+      "firstSeenAt": "2026-07-10T20:13:11.235Z",
+      "lastSeenAt": "2026-07-10T20:13:10.934Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/f8548b34-518d-4f17-8d4d-58fd2ee2b875?index=0",
+        "https://www.midjourney.com/jobs/f8548b34-518d-4f17-8d4d-58fd2ee2b875?index=1",
+        "https://www.midjourney.com/jobs/f8548b34-518d-4f17-8d4d-58fd2ee2b875?index=2",
+        "https://www.midjourney.com/jobs/f8548b34-518d-4f17-8d4d-58fd2ee2b875?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "313da17c-6bf6-4cf5-8192-3ab81b68f48b",
+      "firstSeenAt": "2026-07-10T20:13:10.570Z",
+      "lastSeenAt": "2026-07-10T20:13:10.268Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/313da17c-6bf6-4cf5-8192-3ab81b68f48b?index=0",
+        "https://www.midjourney.com/jobs/313da17c-6bf6-4cf5-8192-3ab81b68f48b?index=1",
+        "https://www.midjourney.com/jobs/313da17c-6bf6-4cf5-8192-3ab81b68f48b?index=2",
+        "https://www.midjourney.com/jobs/313da17c-6bf6-4cf5-8192-3ab81b68f48b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "339966f0-b3bc-442b-a659-afd2b1686107",
+      "firstSeenAt": "2026-07-10T20:13:09.672Z",
+      "lastSeenAt": "2026-07-10T20:13:09.368Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/339966f0-b3bc-442b-a659-afd2b1686107?index=0",
+        "https://www.midjourney.com/jobs/339966f0-b3bc-442b-a659-afd2b1686107?index=1",
+        "https://www.midjourney.com/jobs/339966f0-b3bc-442b-a659-afd2b1686107?index=2",
+        "https://www.midjourney.com/jobs/339966f0-b3bc-442b-a659-afd2b1686107?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "639ed65b-d6a8-4ae2-8fa2-41c43ba3ec43",
+      "firstSeenAt": "2026-07-10T20:13:09.038Z",
+      "lastSeenAt": "2026-07-10T20:13:08.735Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/639ed65b-d6a8-4ae2-8fa2-41c43ba3ec43?index=0",
+        "https://www.midjourney.com/jobs/639ed65b-d6a8-4ae2-8fa2-41c43ba3ec43?index=1",
+        "https://www.midjourney.com/jobs/639ed65b-d6a8-4ae2-8fa2-41c43ba3ec43?index=2",
+        "https://www.midjourney.com/jobs/639ed65b-d6a8-4ae2-8fa2-41c43ba3ec43?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "3b2baceb-e3db-495b-9854-aa0ae1f27a74",
+      "firstSeenAt": "2026-07-10T20:13:08.680Z",
+      "lastSeenAt": "2026-07-10T20:13:08.369Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/3b2baceb-e3db-495b-9854-aa0ae1f27a74?index=0",
+        "https://www.midjourney.com/jobs/3b2baceb-e3db-495b-9854-aa0ae1f27a74?index=1",
+        "https://www.midjourney.com/jobs/3b2baceb-e3db-495b-9854-aa0ae1f27a74?index=2",
+        "https://www.midjourney.com/jobs/3b2baceb-e3db-495b-9854-aa0ae1f27a74?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "467f52fc-0aea-4cc8-90c6-6cf438cf35c1",
+      "firstSeenAt": "2026-07-10T20:13:07.179Z",
+      "lastSeenAt": "2026-07-10T20:13:06.868Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/467f52fc-0aea-4cc8-90c6-6cf438cf35c1?index=0",
+        "https://www.midjourney.com/jobs/467f52fc-0aea-4cc8-90c6-6cf438cf35c1?index=1",
+        "https://www.midjourney.com/jobs/467f52fc-0aea-4cc8-90c6-6cf438cf35c1?index=2",
+        "https://www.midjourney.com/jobs/467f52fc-0aea-4cc8-90c6-6cf438cf35c1?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "97ca8e55-a3a1-4c43-aa94-af107fb762df",
+      "firstSeenAt": "2026-07-10T20:13:06.513Z",
+      "lastSeenAt": "2026-07-10T20:13:06.200Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/97ca8e55-a3a1-4c43-aa94-af107fb762df?index=0",
+        "https://www.midjourney.com/jobs/97ca8e55-a3a1-4c43-aa94-af107fb762df?index=1",
+        "https://www.midjourney.com/jobs/97ca8e55-a3a1-4c43-aa94-af107fb762df?index=2",
+        "https://www.midjourney.com/jobs/97ca8e55-a3a1-4c43-aa94-af107fb762df?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "e26310e1-38c9-40d4-9994-026744881852",
+      "firstSeenAt": "2026-07-10T20:13:05.971Z",
+      "lastSeenAt": "2026-07-10T20:13:05.668Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/e26310e1-38c9-40d4-9994-026744881852?index=0",
+        "https://www.midjourney.com/jobs/e26310e1-38c9-40d4-9994-026744881852?index=1",
+        "https://www.midjourney.com/jobs/e26310e1-38c9-40d4-9994-026744881852?index=2",
+        "https://www.midjourney.com/jobs/e26310e1-38c9-40d4-9994-026744881852?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "3e54acb0-9a31-4b9a-8f78-63e739e1b4a9",
+      "firstSeenAt": "2026-07-10T20:13:05.583Z",
+      "lastSeenAt": "2026-07-10T20:13:05.268Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/3e54acb0-9a31-4b9a-8f78-63e739e1b4a9?index=0",
+        "https://www.midjourney.com/jobs/3e54acb0-9a31-4b9a-8f78-63e739e1b4a9?index=1",
+        "https://www.midjourney.com/jobs/3e54acb0-9a31-4b9a-8f78-63e739e1b4a9?index=2",
+        "https://www.midjourney.com/jobs/3e54acb0-9a31-4b9a-8f78-63e739e1b4a9?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5bb06306-ee47-472f-90cd-84beb41f34a7",
+      "firstSeenAt": "2026-07-10T20:13:05.071Z",
+      "lastSeenAt": "2026-07-10T20:13:04.768Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5bb06306-ee47-472f-90cd-84beb41f34a7?index=0",
+        "https://www.midjourney.com/jobs/5bb06306-ee47-472f-90cd-84beb41f34a7?index=1",
+        "https://www.midjourney.com/jobs/5bb06306-ee47-472f-90cd-84beb41f34a7?index=2",
+        "https://www.midjourney.com/jobs/5bb06306-ee47-472f-90cd-84beb41f34a7?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "d9e37bda-ddc0-48e4-ac76-ba6ef4fcc7cc",
+      "firstSeenAt": "2026-07-10T20:13:04.637Z",
+      "lastSeenAt": "2026-07-10T20:13:04.334Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/d9e37bda-ddc0-48e4-ac76-ba6ef4fcc7cc?index=0",
+        "https://www.midjourney.com/jobs/d9e37bda-ddc0-48e4-ac76-ba6ef4fcc7cc?index=1",
+        "https://www.midjourney.com/jobs/d9e37bda-ddc0-48e4-ac76-ba6ef4fcc7cc?index=2",
+        "https://www.midjourney.com/jobs/d9e37bda-ddc0-48e4-ac76-ba6ef4fcc7cc?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "046d4658-d3cd-448f-a2d0-10d371eadd9e",
+      "firstSeenAt": "2026-07-10T20:13:03.308Z",
+      "lastSeenAt": "2026-07-10T20:13:03.001Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/046d4658-d3cd-448f-a2d0-10d371eadd9e?index=0",
+        "https://www.midjourney.com/jobs/046d4658-d3cd-448f-a2d0-10d371eadd9e?index=1",
+        "https://www.midjourney.com/jobs/046d4658-d3cd-448f-a2d0-10d371eadd9e?index=2",
+        "https://www.midjourney.com/jobs/046d4658-d3cd-448f-a2d0-10d371eadd9e?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "03b964f1-74a8-44df-92c2-f64d2a50268a",
+      "firstSeenAt": "2026-07-10T20:13:02.602Z",
+      "lastSeenAt": "2026-07-10T20:13:02.301Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/03b964f1-74a8-44df-92c2-f64d2a50268a?index=0",
+        "https://www.midjourney.com/jobs/03b964f1-74a8-44df-92c2-f64d2a50268a?index=1",
+        "https://www.midjourney.com/jobs/03b964f1-74a8-44df-92c2-f64d2a50268a?index=2",
+        "https://www.midjourney.com/jobs/03b964f1-74a8-44df-92c2-f64d2a50268a?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "136c447c-2f79-4c66-9d3d-61eb235ff780",
+      "firstSeenAt": "2026-07-10T20:13:01.975Z",
+      "lastSeenAt": "2026-07-10T20:13:01.670Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/136c447c-2f79-4c66-9d3d-61eb235ff780?index=0",
+        "https://www.midjourney.com/jobs/136c447c-2f79-4c66-9d3d-61eb235ff780?index=1",
+        "https://www.midjourney.com/jobs/136c447c-2f79-4c66-9d3d-61eb235ff780?index=2",
+        "https://www.midjourney.com/jobs/136c447c-2f79-4c66-9d3d-61eb235ff780?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "bf07b274-17e0-4bee-a0be-082098f6f49b",
+      "firstSeenAt": "2026-07-10T20:13:01.045Z",
+      "lastSeenAt": "2026-07-10T20:13:00.736Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/bf07b274-17e0-4bee-a0be-082098f6f49b?index=0",
+        "https://www.midjourney.com/jobs/bf07b274-17e0-4bee-a0be-082098f6f49b?index=1",
+        "https://www.midjourney.com/jobs/bf07b274-17e0-4bee-a0be-082098f6f49b?index=2",
+        "https://www.midjourney.com/jobs/bf07b274-17e0-4bee-a0be-082098f6f49b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "7d7bb5d0-a0ee-4603-b626-82dbfa554e62",
+      "firstSeenAt": "2026-07-10T20:13:00.595Z",
+      "lastSeenAt": "2026-07-10T20:13:00.290Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/7d7bb5d0-a0ee-4603-b626-82dbfa554e62?index=0",
+        "https://www.midjourney.com/jobs/7d7bb5d0-a0ee-4603-b626-82dbfa554e62?index=1",
+        "https://www.midjourney.com/jobs/7d7bb5d0-a0ee-4603-b626-82dbfa554e62?index=2",
+        "https://www.midjourney.com/jobs/7d7bb5d0-a0ee-4603-b626-82dbfa554e62?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "b43d1ea1-8cc0-41a9-a3b3-f64e87b9a770",
+      "firstSeenAt": "2026-07-10T20:12:59.899Z",
+      "lastSeenAt": "2026-07-10T20:12:59.591Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/b43d1ea1-8cc0-41a9-a3b3-f64e87b9a770?index=0",
+        "https://www.midjourney.com/jobs/b43d1ea1-8cc0-41a9-a3b3-f64e87b9a770?index=1",
+        "https://www.midjourney.com/jobs/b43d1ea1-8cc0-41a9-a3b3-f64e87b9a770?index=2",
+        "https://www.midjourney.com/jobs/b43d1ea1-8cc0-41a9-a3b3-f64e87b9a770?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "6e7b7c8b-452b-4ec0-9dc8-c1b9aa3a0ab1",
+      "firstSeenAt": "2026-07-10T20:12:58.539Z",
+      "lastSeenAt": "2026-07-10T20:12:58.236Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/6e7b7c8b-452b-4ec0-9dc8-c1b9aa3a0ab1?index=0",
+        "https://www.midjourney.com/jobs/6e7b7c8b-452b-4ec0-9dc8-c1b9aa3a0ab1?index=1",
+        "https://www.midjourney.com/jobs/6e7b7c8b-452b-4ec0-9dc8-c1b9aa3a0ab1?index=2",
+        "https://www.midjourney.com/jobs/6e7b7c8b-452b-4ec0-9dc8-c1b9aa3a0ab1?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "feb104da-177f-4e0d-81d3-e346005c91f3",
+      "firstSeenAt": "2026-07-10T20:12:58.212Z",
+      "lastSeenAt": "2026-07-10T20:12:57.901Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/feb104da-177f-4e0d-81d3-e346005c91f3?index=0",
+        "https://www.midjourney.com/jobs/feb104da-177f-4e0d-81d3-e346005c91f3?index=1",
+        "https://www.midjourney.com/jobs/feb104da-177f-4e0d-81d3-e346005c91f3?index=2",
+        "https://www.midjourney.com/jobs/feb104da-177f-4e0d-81d3-e346005c91f3?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "3f76347c-f665-4f51-a5ea-b2e7f028025d",
+      "firstSeenAt": "2026-07-10T20:12:57.746Z",
+      "lastSeenAt": "2026-07-10T20:12:57.435Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/3f76347c-f665-4f51-a5ea-b2e7f028025d?index=0",
+        "https://www.midjourney.com/jobs/3f76347c-f665-4f51-a5ea-b2e7f028025d?index=1",
+        "https://www.midjourney.com/jobs/3f76347c-f665-4f51-a5ea-b2e7f028025d?index=2",
+        "https://www.midjourney.com/jobs/3f76347c-f665-4f51-a5ea-b2e7f028025d?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "891551dc-92df-4867-b429-83408df29047",
+      "firstSeenAt": "2026-07-10T20:12:57.049Z",
+      "lastSeenAt": "2026-07-10T20:12:56.736Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/891551dc-92df-4867-b429-83408df29047?index=0",
+        "https://www.midjourney.com/jobs/891551dc-92df-4867-b429-83408df29047?index=1",
+        "https://www.midjourney.com/jobs/891551dc-92df-4867-b429-83408df29047?index=2",
+        "https://www.midjourney.com/jobs/891551dc-92df-4867-b429-83408df29047?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "016349e4-6115-4942-ae12-eeb791e1d1df",
+      "firstSeenAt": "2026-07-10T20:12:39.370Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/016349e4-6115-4942-ae12-eeb791e1d1df?index=0",
+        "https://www.midjourney.com/jobs/016349e4-6115-4942-ae12-eeb791e1d1df?index=1",
+        "https://www.midjourney.com/jobs/016349e4-6115-4942-ae12-eeb791e1d1df?index=2",
+        "https://www.midjourney.com/jobs/016349e4-6115-4942-ae12-eeb791e1d1df?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "32f08e2c-8188-4a08-bd93-89d22369d3ad",
+      "firstSeenAt": "2026-07-10T20:12:34.112Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/32f08e2c-8188-4a08-bd93-89d22369d3ad?index=0",
+        "https://www.midjourney.com/jobs/32f08e2c-8188-4a08-bd93-89d22369d3ad?index=1",
+        "https://www.midjourney.com/jobs/32f08e2c-8188-4a08-bd93-89d22369d3ad?index=2",
+        "https://www.midjourney.com/jobs/32f08e2c-8188-4a08-bd93-89d22369d3ad?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "3f04b5cf-85bb-45cc-bcd4-e819c686f341",
+      "firstSeenAt": "2026-07-10T20:12:33.182Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/3f04b5cf-85bb-45cc-bcd4-e819c686f341?index=0",
+        "https://www.midjourney.com/jobs/3f04b5cf-85bb-45cc-bcd4-e819c686f341?index=1",
+        "https://www.midjourney.com/jobs/3f04b5cf-85bb-45cc-bcd4-e819c686f341?index=2",
+        "https://www.midjourney.com/jobs/3f04b5cf-85bb-45cc-bcd4-e819c686f341?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "3fc39d3d-8948-4ce5-a055-f5d9ca1aaf32",
+      "firstSeenAt": "2026-07-10T20:12:34.545Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/3fc39d3d-8948-4ce5-a055-f5d9ca1aaf32?index=0",
+        "https://www.midjourney.com/jobs/3fc39d3d-8948-4ce5-a055-f5d9ca1aaf32?index=1",
+        "https://www.midjourney.com/jobs/3fc39d3d-8948-4ce5-a055-f5d9ca1aaf32?index=2",
+        "https://www.midjourney.com/jobs/3fc39d3d-8948-4ce5-a055-f5d9ca1aaf32?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "4c397750-1495-4799-b145-2a766b456f2d",
+      "firstSeenAt": "2026-07-10T20:12:39.737Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/4c397750-1495-4799-b145-2a766b456f2d?index=0",
+        "https://www.midjourney.com/jobs/4c397750-1495-4799-b145-2a766b456f2d?index=1",
+        "https://www.midjourney.com/jobs/4c397750-1495-4799-b145-2a766b456f2d?index=2",
+        "https://www.midjourney.com/jobs/4c397750-1495-4799-b145-2a766b456f2d?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "937064e2-8eec-4abe-858e-454a7f334f3f",
+      "firstSeenAt": "2026-07-10T20:12:33.725Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/937064e2-8eec-4abe-858e-454a7f334f3f?index=0",
+        "https://www.midjourney.com/jobs/937064e2-8eec-4abe-858e-454a7f334f3f?index=1",
+        "https://www.midjourney.com/jobs/937064e2-8eec-4abe-858e-454a7f334f3f?index=2",
+        "https://www.midjourney.com/jobs/937064e2-8eec-4abe-858e-454a7f334f3f?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "bf3985e8-1f43-42a4-8fde-04364e9248c9",
+      "firstSeenAt": "2026-07-10T20:12:38.849Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/bf3985e8-1f43-42a4-8fde-04364e9248c9?index=0",
+        "https://www.midjourney.com/jobs/bf3985e8-1f43-42a4-8fde-04364e9248c9?index=1",
+        "https://www.midjourney.com/jobs/bf3985e8-1f43-42a4-8fde-04364e9248c9?index=2",
+        "https://www.midjourney.com/jobs/bf3985e8-1f43-42a4-8fde-04364e9248c9?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "efd85eed-3a5b-452a-a0f8-4ecbc28deb58",
+      "firstSeenAt": "2026-07-10T20:12:40.305Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/efd85eed-3a5b-452a-a0f8-4ecbc28deb58?index=0",
+        "https://www.midjourney.com/jobs/efd85eed-3a5b-452a-a0f8-4ecbc28deb58?index=1",
+        "https://www.midjourney.com/jobs/efd85eed-3a5b-452a-a0f8-4ecbc28deb58?index=2",
+        "https://www.midjourney.com/jobs/efd85eed-3a5b-452a-a0f8-4ecbc28deb58?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "f0668b8a-ff25-4587-b940-9fc887ab7f30",
+      "firstSeenAt": "2026-07-10T20:12:51.414Z",
+      "lastSeenAt": "2026-07-10T20:12:52.861Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/f0668b8a-ff25-4587-b940-9fc887ab7f30?index=0",
+        "https://www.midjourney.com/jobs/f0668b8a-ff25-4587-b940-9fc887ab7f30?index=1",
+        "https://www.midjourney.com/jobs/f0668b8a-ff25-4587-b940-9fc887ab7f30?index=2",
+        "https://www.midjourney.com/jobs/f0668b8a-ff25-4587-b940-9fc887ab7f30?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "6ae65de0-f6d5-49d8-a86b-4d8aa353d285",
+      "firstSeenAt": "2026-07-10T20:12:32.683Z",
+      "lastSeenAt": "2026-07-10T20:12:32.369Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/6ae65de0-f6d5-49d8-a86b-4d8aa353d285?index=0",
+        "https://www.midjourney.com/jobs/6ae65de0-f6d5-49d8-a86b-4d8aa353d285?index=1",
+        "https://www.midjourney.com/jobs/6ae65de0-f6d5-49d8-a86b-4d8aa353d285?index=2",
+        "https://www.midjourney.com/jobs/6ae65de0-f6d5-49d8-a86b-4d8aa353d285?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "e78ba3ff-8c23-458e-9379-9bc73b3c065d",
+      "firstSeenAt": "2026-07-10T20:12:31.879Z",
+      "lastSeenAt": "2026-07-10T20:12:31.570Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/e78ba3ff-8c23-458e-9379-9bc73b3c065d?index=0",
+        "https://www.midjourney.com/jobs/e78ba3ff-8c23-458e-9379-9bc73b3c065d?index=1",
+        "https://www.midjourney.com/jobs/e78ba3ff-8c23-458e-9379-9bc73b3c065d?index=2",
+        "https://www.midjourney.com/jobs/e78ba3ff-8c23-458e-9379-9bc73b3c065d?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5fc34ec8-7fac-44c7-9be9-2e9ea03af3b7",
+      "firstSeenAt": "2026-07-10T20:12:31.879Z",
+      "lastSeenAt": "2026-07-10T20:12:31.271Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5fc34ec8-7fac-44c7-9be9-2e9ea03af3b7?index=0",
+        "https://www.midjourney.com/jobs/5fc34ec8-7fac-44c7-9be9-2e9ea03af3b7?index=1",
+        "https://www.midjourney.com/jobs/5fc34ec8-7fac-44c7-9be9-2e9ea03af3b7?index=2",
+        "https://www.midjourney.com/jobs/5fc34ec8-7fac-44c7-9be9-2e9ea03af3b7?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "71b58eab-3053-4152-abbf-fba490176d4e",
+      "firstSeenAt": "2026-07-10T20:12:29.337Z",
+      "lastSeenAt": "2026-07-10T20:12:31.239Z",
+      "seenCount": 26,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/71b58eab-3053-4152-abbf-fba490176d4e?index=0",
+        "https://www.midjourney.com/jobs/71b58eab-3053-4152-abbf-fba490176d4e?index=1",
+        "https://www.midjourney.com/jobs/71b58eab-3053-4152-abbf-fba490176d4e?index=2",
+        "https://www.midjourney.com/jobs/71b58eab-3053-4152-abbf-fba490176d4e?index=3"
+      ],
+      "cdnUrls": [
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:30.128Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:30.128Z",
+          "url": "https://cdn.midjourney.com/video/71b58eab-3053-4152-abbf-fba490176d4e/0.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:30.128Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:30.128Z",
+          "url": "https://cdn.midjourney.com/video/71b58eab-3053-4152-abbf-fba490176d4e/1.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:30.128Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:30.128Z",
+          "url": "https://cdn.midjourney.com/video/71b58eab-3053-4152-abbf-fba490176d4e/2.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:30.128Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:30.128Z",
+          "url": "https://cdn.midjourney.com/video/71b58eab-3053-4152-abbf-fba490176d4e/3.mp4"
+        }
+      ],
+      "observedKinds": [
+        "video"
+      ]
+    },
+    {
+      "jobId": "5bea7e99-9305-4eba-9922-7ab4f1199578",
+      "firstSeenAt": "2026-07-10T20:12:31.879Z",
+      "lastSeenAt": "2026-07-10T20:12:30.936Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5bea7e99-9305-4eba-9922-7ab4f1199578?index=0",
+        "https://www.midjourney.com/jobs/5bea7e99-9305-4eba-9922-7ab4f1199578?index=1",
+        "https://www.midjourney.com/jobs/5bea7e99-9305-4eba-9922-7ab4f1199578?index=2",
+        "https://www.midjourney.com/jobs/5bea7e99-9305-4eba-9922-7ab4f1199578?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "1f043a13-c16a-4e75-a612-0801263775e3",
+      "firstSeenAt": "2026-07-10T20:12:31.879Z",
+      "lastSeenAt": "2026-07-10T20:12:30.703Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/1f043a13-c16a-4e75-a612-0801263775e3?index=0",
+        "https://www.midjourney.com/jobs/1f043a13-c16a-4e75-a612-0801263775e3?index=1",
+        "https://www.midjourney.com/jobs/1f043a13-c16a-4e75-a612-0801263775e3?index=2",
+        "https://www.midjourney.com/jobs/1f043a13-c16a-4e75-a612-0801263775e3?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "ddbbe782-2ec0-469b-a935-6a78f340d49b",
+      "firstSeenAt": "2026-07-10T20:12:31.878Z",
+      "lastSeenAt": "2026-07-10T20:12:30.591Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/ddbbe782-2ec0-469b-a935-6a78f340d49b?index=0",
+        "https://www.midjourney.com/jobs/ddbbe782-2ec0-469b-a935-6a78f340d49b?index=1",
+        "https://www.midjourney.com/jobs/ddbbe782-2ec0-469b-a935-6a78f340d49b?index=2",
+        "https://www.midjourney.com/jobs/ddbbe782-2ec0-469b-a935-6a78f340d49b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "d1302d0c-08c8-486d-a171-f92e66e3e2be",
+      "firstSeenAt": "2026-07-10T20:12:30.547Z",
+      "lastSeenAt": "2026-07-10T20:12:30.239Z",
+      "seenCount": 14,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/d1302d0c-08c8-486d-a171-f92e66e3e2be?index=0",
+        "https://www.midjourney.com/jobs/d1302d0c-08c8-486d-a171-f92e66e3e2be?index=1",
+        "https://www.midjourney.com/jobs/d1302d0c-08c8-486d-a171-f92e66e3e2be?index=2",
+        "https://www.midjourney.com/jobs/d1302d0c-08c8-486d-a171-f92e66e3e2be?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "71624292-9b3c-49b6-9cd5-03c9cec125fa",
+      "firstSeenAt": "2026-07-10T20:12:30.547Z",
+      "lastSeenAt": "2026-07-10T20:12:30.036Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/71624292-9b3c-49b6-9cd5-03c9cec125fa?index=0",
+        "https://www.midjourney.com/jobs/71624292-9b3c-49b6-9cd5-03c9cec125fa?index=1",
+        "https://www.midjourney.com/jobs/71624292-9b3c-49b6-9cd5-03c9cec125fa?index=2",
+        "https://www.midjourney.com/jobs/71624292-9b3c-49b6-9cd5-03c9cec125fa?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "d7cbd197-a49c-437f-94ab-d8d0d2485139",
+      "firstSeenAt": "2026-07-10T20:12:30.547Z",
+      "lastSeenAt": "2026-07-10T20:12:29.891Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/d7cbd197-a49c-437f-94ab-d8d0d2485139?index=0",
+        "https://www.midjourney.com/jobs/d7cbd197-a49c-437f-94ab-d8d0d2485139?index=1",
+        "https://www.midjourney.com/jobs/d7cbd197-a49c-437f-94ab-d8d0d2485139?index=2",
+        "https://www.midjourney.com/jobs/d7cbd197-a49c-437f-94ab-d8d0d2485139?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "ba1b1e5e-0e2f-4317-82b2-8ac032daf1b6",
+      "firstSeenAt": "2026-07-10T20:12:30.547Z",
+      "lastSeenAt": "2026-07-10T20:12:29.637Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/ba1b1e5e-0e2f-4317-82b2-8ac032daf1b6?index=0",
+        "https://www.midjourney.com/jobs/ba1b1e5e-0e2f-4317-82b2-8ac032daf1b6?index=1",
+        "https://www.midjourney.com/jobs/ba1b1e5e-0e2f-4317-82b2-8ac032daf1b6?index=2",
+        "https://www.midjourney.com/jobs/ba1b1e5e-0e2f-4317-82b2-8ac032daf1b6?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "863ddcf5-2245-484f-8eb2-fad3f1c00f07",
+      "firstSeenAt": "2026-07-10T20:12:29.337Z",
+      "lastSeenAt": "2026-07-10T20:12:29.369Z",
+      "seenCount": 16,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/863ddcf5-2245-484f-8eb2-fad3f1c00f07?index=0",
+        "https://www.midjourney.com/jobs/863ddcf5-2245-484f-8eb2-fad3f1c00f07?index=1",
+        "https://www.midjourney.com/jobs/863ddcf5-2245-484f-8eb2-fad3f1c00f07?index=2",
+        "https://www.midjourney.com/jobs/863ddcf5-2245-484f-8eb2-fad3f1c00f07?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "c86a26cb-3730-4000-8fa7-d1ef6740d53b",
+      "firstSeenAt": "2026-07-10T20:12:25.221Z",
+      "lastSeenAt": "2026-07-10T20:12:29.035Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/c86a26cb-3730-4000-8fa7-d1ef6740d53b?index=0",
+        "https://www.midjourney.com/jobs/c86a26cb-3730-4000-8fa7-d1ef6740d53b?index=1",
+        "https://www.midjourney.com/jobs/c86a26cb-3730-4000-8fa7-d1ef6740d53b?index=2",
+        "https://www.midjourney.com/jobs/c86a26cb-3730-4000-8fa7-d1ef6740d53b?index=3"
+      ],
+      "cdnUrls": [
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:28.036Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:28.036Z",
+          "url": "https://cdn.midjourney.com/video/c86a26cb-3730-4000-8fa7-d1ef6740d53b/0.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:28.036Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:28.036Z",
+          "url": "https://cdn.midjourney.com/video/c86a26cb-3730-4000-8fa7-d1ef6740d53b/1.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:28.036Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:28.036Z",
+          "url": "https://cdn.midjourney.com/video/c86a26cb-3730-4000-8fa7-d1ef6740d53b/2.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:28.036Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:28.036Z",
+          "url": "https://cdn.midjourney.com/video/c86a26cb-3730-4000-8fa7-d1ef6740d53b/3.mp4"
+        }
+      ],
+      "observedKinds": [
+        "video"
+      ]
+    },
+    {
+      "jobId": "ecfeb317-afaf-43ae-80ee-0c089c0c82a8",
+      "firstSeenAt": "2026-07-10T20:12:29.337Z",
+      "lastSeenAt": "2026-07-10T20:12:28.969Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/ecfeb317-afaf-43ae-80ee-0c089c0c82a8?index=0",
+        "https://www.midjourney.com/jobs/ecfeb317-afaf-43ae-80ee-0c089c0c82a8?index=1",
+        "https://www.midjourney.com/jobs/ecfeb317-afaf-43ae-80ee-0c089c0c82a8?index=2",
+        "https://www.midjourney.com/jobs/ecfeb317-afaf-43ae-80ee-0c089c0c82a8?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d",
+      "firstSeenAt": "2026-07-10T20:12:25.221Z",
+      "lastSeenAt": "2026-07-10T20:12:28.802Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d?index=0",
+        "https://www.midjourney.com/jobs/ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d?index=1",
+        "https://www.midjourney.com/jobs/ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d?index=2",
+        "https://www.midjourney.com/jobs/ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d?index=3"
+      ],
+      "cdnUrls": [
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:27.636Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:27.636Z",
+          "url": "https://cdn.midjourney.com/video/ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d/0.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:27.636Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:27.636Z",
+          "url": "https://cdn.midjourney.com/video/ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d/1.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:27.637Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:27.637Z",
+          "url": "https://cdn.midjourney.com/video/ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d/2.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:27.637Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:27.637Z",
+          "url": "https://cdn.midjourney.com/video/ec5e7960-fb7b-4d21-bb7b-3bd9dcb9bb0d/3.mp4"
+        }
+      ],
+      "observedKinds": [
+        "video"
+      ]
+    },
+    {
+      "jobId": "211acffc-f737-43d2-b6d4-1a10fa36e5f5",
+      "firstSeenAt": "2026-07-10T20:12:29.337Z",
+      "lastSeenAt": "2026-07-10T20:12:28.735Z",
+      "seenCount": 14,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/211acffc-f737-43d2-b6d4-1a10fa36e5f5?index=0",
+        "https://www.midjourney.com/jobs/211acffc-f737-43d2-b6d4-1a10fa36e5f5?index=1",
+        "https://www.midjourney.com/jobs/211acffc-f737-43d2-b6d4-1a10fa36e5f5?index=2",
+        "https://www.midjourney.com/jobs/211acffc-f737-43d2-b6d4-1a10fa36e5f5?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "50377ac1-8dba-44d6-a854-4ac4b11c58a9",
+      "firstSeenAt": "2026-07-10T20:12:25.221Z",
+      "lastSeenAt": "2026-07-10T20:12:28.660Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/50377ac1-8dba-44d6-a854-4ac4b11c58a9?index=0",
+        "https://www.midjourney.com/jobs/50377ac1-8dba-44d6-a854-4ac4b11c58a9?index=1",
+        "https://www.midjourney.com/jobs/50377ac1-8dba-44d6-a854-4ac4b11c58a9?index=2",
+        "https://www.midjourney.com/jobs/50377ac1-8dba-44d6-a854-4ac4b11c58a9?index=3"
+      ],
+      "cdnUrls": [
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:24.910Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:24.910Z",
+          "url": "https://cdn.midjourney.com/video/50377ac1-8dba-44d6-a854-4ac4b11c58a9/0.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:24.910Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:24.910Z",
+          "url": "https://cdn.midjourney.com/video/50377ac1-8dba-44d6-a854-4ac4b11c58a9/1.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:24.910Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:24.910Z",
+          "url": "https://cdn.midjourney.com/video/50377ac1-8dba-44d6-a854-4ac4b11c58a9/2.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:24.910Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:24.910Z",
+          "url": "https://cdn.midjourney.com/video/50377ac1-8dba-44d6-a854-4ac4b11c58a9/3.mp4"
+        }
+      ],
+      "observedKinds": [
+        "video"
+      ]
+    },
+    {
+      "jobId": "68c08ca1-4c37-4ff0-a75f-5b15f154c946",
+      "firstSeenAt": "2026-07-10T20:12:29.337Z",
+      "lastSeenAt": "2026-07-10T20:12:28.403Z",
+      "seenCount": 14,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/68c08ca1-4c37-4ff0-a75f-5b15f154c946?index=0",
+        "https://www.midjourney.com/jobs/68c08ca1-4c37-4ff0-a75f-5b15f154c946?index=1",
+        "https://www.midjourney.com/jobs/68c08ca1-4c37-4ff0-a75f-5b15f154c946?index=2",
+        "https://www.midjourney.com/jobs/68c08ca1-4c37-4ff0-a75f-5b15f154c946?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "676376c3-351f-4d3d-8724-3b62491dc135",
+      "firstSeenAt": "2026-07-10T20:12:25.221Z",
+      "lastSeenAt": "2026-07-10T20:12:28.368Z",
+      "seenCount": 20,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/676376c3-351f-4d3d-8724-3b62491dc135?index=0",
+        "https://www.midjourney.com/jobs/676376c3-351f-4d3d-8724-3b62491dc135?index=1",
+        "https://www.midjourney.com/jobs/676376c3-351f-4d3d-8724-3b62491dc135?index=2",
+        "https://www.midjourney.com/jobs/676376c3-351f-4d3d-8724-3b62491dc135?index=3"
+      ],
+      "cdnUrls": [
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:24.910Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:24.910Z",
+          "url": "https://cdn.midjourney.com/video/676376c3-351f-4d3d-8724-3b62491dc135/0.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:24.910Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:24.910Z",
+          "url": "https://cdn.midjourney.com/video/676376c3-351f-4d3d-8724-3b62491dc135/1.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:24.910Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:24.910Z",
+          "url": "https://cdn.midjourney.com/video/676376c3-351f-4d3d-8724-3b62491dc135/2.mp4"
+        },
+        {
+          "extension": "mp4",
+          "firstSeenAt": "2026-07-10T20:12:24.910Z",
+          "kind": "video",
+          "lastSeenAt": "2026-07-10T20:12:24.910Z",
+          "url": "https://cdn.midjourney.com/video/676376c3-351f-4d3d-8724-3b62491dc135/3.mp4"
+        }
+      ],
+      "observedKinds": [
+        "video"
+      ]
+    },
+    {
+      "jobId": "5fdd4b78-5313-4fd4-9cfb-075a4d28e7ba",
+      "firstSeenAt": "2026-07-10T20:12:29.337Z",
+      "lastSeenAt": "2026-07-10T20:12:28.174Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5fdd4b78-5313-4fd4-9cfb-075a4d28e7ba?index=0",
+        "https://www.midjourney.com/jobs/5fdd4b78-5313-4fd4-9cfb-075a4d28e7ba?index=1",
+        "https://www.midjourney.com/jobs/5fdd4b78-5313-4fd4-9cfb-075a4d28e7ba?index=2",
+        "https://www.midjourney.com/jobs/5fdd4b78-5313-4fd4-9cfb-075a4d28e7ba?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "61d6e6fc-a879-4776-9a91-62428b2ab6c7",
+      "firstSeenAt": "2026-07-10T20:12:29.337Z",
+      "lastSeenAt": "2026-07-10T20:12:27.769Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/61d6e6fc-a879-4776-9a91-62428b2ab6c7?index=0",
+        "https://www.midjourney.com/jobs/61d6e6fc-a879-4776-9a91-62428b2ab6c7?index=1",
+        "https://www.midjourney.com/jobs/61d6e6fc-a879-4776-9a91-62428b2ab6c7?index=2",
+        "https://www.midjourney.com/jobs/61d6e6fc-a879-4776-9a91-62428b2ab6c7?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "ca7c8ec3-d970-4212-b932-0208fa4b49f7",
+      "firstSeenAt": "2026-07-10T20:12:27.602Z",
+      "lastSeenAt": "2026-07-10T20:12:27.300Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/ca7c8ec3-d970-4212-b932-0208fa4b49f7?index=0",
+        "https://www.midjourney.com/jobs/ca7c8ec3-d970-4212-b932-0208fa4b49f7?index=1",
+        "https://www.midjourney.com/jobs/ca7c8ec3-d970-4212-b932-0208fa4b49f7?index=2",
+        "https://www.midjourney.com/jobs/ca7c8ec3-d970-4212-b932-0208fa4b49f7?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "5ee12754-3166-4527-b66c-97591a864da5",
+      "firstSeenAt": "2026-07-10T20:12:26.674Z",
+      "lastSeenAt": "2026-07-10T20:12:26.366Z",
+      "seenCount": 12,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/5ee12754-3166-4527-b66c-97591a864da5?index=0",
+        "https://www.midjourney.com/jobs/5ee12754-3166-4527-b66c-97591a864da5?index=1",
+        "https://www.midjourney.com/jobs/5ee12754-3166-4527-b66c-97591a864da5?index=2",
+        "https://www.midjourney.com/jobs/5ee12754-3166-4527-b66c-97591a864da5?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "59f7d401-43f6-4322-a48b-51a64810b2b0",
+      "firstSeenAt": "2026-07-10T20:12:25.221Z",
+      "lastSeenAt": "2026-07-10T20:12:24.910Z",
+      "seenCount": 4,
+      "jobPageUrls": [],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "73c79a33-6cf0-451b-b3da-0784ea9d19c5",
+      "firstSeenAt": "2026-07-10T20:12:25.221Z",
+      "lastSeenAt": "2026-07-10T20:12:24.910Z",
+      "seenCount": 1,
+      "jobPageUrls": [],
+      "cdnUrls": [],
+      "observedKinds": []
+    },
+    {
+      "jobId": "df8275e1-0bd6-4453-8fbe-957f9bdac58b",
+      "firstSeenAt": "2026-07-10T20:12:25.221Z",
+      "lastSeenAt": "2026-07-10T20:12:24.910Z",
+      "seenCount": 8,
+      "jobPageUrls": [
+        "https://www.midjourney.com/jobs/df8275e1-0bd6-4453-8fbe-957f9bdac58b?index=0",
+        "https://www.midjourney.com/jobs/df8275e1-0bd6-4453-8fbe-957f9bdac58b?index=1",
+        "https://www.midjourney.com/jobs/df8275e1-0bd6-4453-8fbe-957f9bdac58b?index=2",
+        "https://www.midjourney.com/jobs/df8275e1-0bd6-4453-8fbe-957f9bdac58b?index=3"
+      ],
+      "cdnUrls": [],
+      "observedKinds": []
+    }
+  ]
+}

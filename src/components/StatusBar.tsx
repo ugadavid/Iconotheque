@@ -11,6 +11,9 @@ type StatusBarProps = {
   databaseStatus: DatabaseStatus;
   searchModeLabel: string | null;
   workflowFilterLabel: string | null;
+  collectionDropFeedback: string | null;
+  sourceLabel?: string;
+  sourceTitle?: string;
   onOpenRootFolder: () => void;
   onRescanRootFolder: () => void;
   onThumbnailSizeChange: (thumbnailSize: ThumbnailSize) => void;
@@ -50,12 +53,15 @@ export function StatusBar({
   databaseStatus,
   searchModeLabel,
   workflowFilterLabel,
+  collectionDropFeedback,
+  sourceLabel,
+  sourceTitle,
   onOpenRootFolder,
   onRescanRootFolder,
   onThumbnailSizeChange,
   onOpenBatchMetadataEditor
 }: StatusBarProps) {
-  const folderLabel = rootFolder ? rootFolder.name : "Aucun dossier ouvert";
+  const folderLabel = sourceLabel ?? (rootFolder ? rootFolder.name : "Aucun dossier ouvert");
   const imageCountLabel = `${imageScan.images.length} image${
     imageScan.images.length > 1 ? "s" : ""
   }`;
@@ -75,14 +81,17 @@ export function StatusBar({
   return (
     <footer className="status-bar" aria-label="Barre de statut">
       <div className="status-bar-section status-bar-left">
-        <span className="status-item status-item-strong" title={rootFolder?.path}>
+        <span className="status-item status-item-strong" title={sourceTitle ?? rootFolder?.path}>
           {folderLabel}
         </span>
         <span className="status-item">{imageCountLabel}</span>
         <span className="status-item">{getScanLabel(rootFolder, imageScan)}</span>
+        {collectionDropFeedback ? (
+          <span className="status-item status-item-feedback">{collectionDropFeedback}</span>
+        ) : null}
         {searchModeLabel ? <span className="status-item">{searchModeLabel}</span> : null}
         {workflowFilterLabel ? <span className="status-item">{workflowFilterLabel}</span> : null}
-        <span className="status-item status-item-selected" title={selectedImage?.path}>
+        <span className="status-item status-item-selected" title={selectedImage?.path ?? selectedImage?.displayName}>
           {selectedImageLabel}
         </span>
       </div>
