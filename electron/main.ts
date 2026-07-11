@@ -1,4 +1,4 @@
-import { app, BrowserWindow, clipboard, dialog, ipcMain, Menu, net, protocol } from "electron";
+import { app, BrowserWindow, clipboard, dialog, ipcMain, Menu, net, protocol, shell } from "electron";
 import type { MenuItemConstructorOptions, OpenDialogOptions } from "electron";
 import { existsSync, mkdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import { readFile, readdir, stat } from "node:fs/promises";
@@ -10,7 +10,11 @@ import {
   removeRemoteImagesFromCatalog,
   type RemoveRemoteImagesFromCatalogResult
 } from "./remote-reference-removal.js";
-import { getMidjourneyLocalImageKey, resolveMidjourneyLocalImagePath } from "./midjourney-local-image-path.js";
+import {
+  getMidjourneyLocalImageKey,
+  resolveMidjourneyLocalImageJobDirectory,
+  resolveMidjourneyLocalImagePath
+} from "./midjourney-local-image-path.js";
 
 const require = createRequire(import.meta.url);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -42,6 +46,8 @@ const LIST_REMOTE_IMAGES_CHANNEL = "remote-image:list";
 const REMOVE_REMOTE_IMAGES_FROM_CATALOG_CHANNEL = "remote-image:remove-from-catalog";
 const COPY_MIDJOURNEY_JOB_ID_CHANNEL = "midjourney:copy-job-id";
 const DOWNLOAD_MIDJOURNEY_IMAGE_CHANNEL = "midjourney:download-image";
+const DOWNLOAD_MIDJOURNEY_JOB_IMAGES_CHANNEL = "midjourney:download-job-images";
+const OPEN_MIDJOURNEY_JOB_FOLDER_CHANNEL = "midjourney:open-job-folder";
 const ADD_REMOTE_IMAGE_REQUEST_CHANNEL = "remote-image:add-requested";
 const ADD_MIDJOURNEY_JOB_CHANNEL = "midjourney:add-job";
 const ADD_MIDJOURNEY_VIDEO_JOB_CHANNEL = "midjourney:add-video-job";
@@ -168,6 +174,7 @@ type ImageFile = {
   remoteSlot?: string | null;
   mediaKind?: MediaKind;
   videoThumbnailUrl?: string | null;
+  usesLocalCopy?: boolean;
 };
 
 type ImageIdentity = {
@@ -245,6 +252,13 @@ type MidjourneyObservationsImportResult = {
 
 type CopyMidjourneyJobIdResult = { ok: true } | { ok: false; error: string };
 type DownloadMidjourneyImageResult = { ok: true } | { ok: false; error: string };
+type DownloadMidjourneyJobImagesResult =
+  | { ok: true; downloadedCount: number; reusedCount: number; failedCount: number }
+  | { ok: false; error: string };
+type DownloadMidjourneyImageAttemptResult =
+  | { ok: true; reused: boolean }
+  | { ok: false; error: string };
+type OpenMidjourneyJobFolderResult = { ok: true } | { ok: false; error: string };
 
 type ImageScanResult =
   | {
@@ -2088,7 +2102,8 @@ function toRemoteImageFile(remoteRecord: RemoteImageRecord, workflowColor?: Work
   const displayName = getDisplayNameFromRemoteUrl(remoteRecord.remoteUrl);
   const extension = getRemoteExtension(remoteRecord.remoteUrl);
   const localCopyPath = getMidjourneyLocalCopyPath(remoteRecord);
-  const imageSrc = localCopyPath ? createPreviewUrl(localCopyPath, ".png") ?? getRemotePreviewUrl(remoteRecord.imageId) : getRemotePreviewUrl(remoteRecord.imageId);
+  const localCopyPreviewUrl = localCopyPath ? createPreviewUrl(localCopyPath, ".png") : null;
+  const imageSrc = localCopyPreviewUrl ?? getRemotePreviewUrl(remoteRecord.imageId);
   const providerLabel = remoteRecord.provider === MIDJOURNEY_PROVIDER ? "Midjourney" : null;
   const slotLabel = remoteRecord.remoteSlot ? ` ${remoteRecord.remoteSlot}` : "";
   const videoThumbnailKey = getVideoThumbnailKeyForRemoteRecord(remoteRecord);
@@ -2110,6 +2125,7 @@ function toRemoteImageFile(remoteRecord: RemoteImageRecord, workflowColor?: Work
     remoteProviderGroupId: remoteRecord.providerGroupId,
     remoteSlot: remoteRecord.remoteSlot,
     mediaKind: remoteRecord.mediaKind,
+    usesLocalCopy: localCopyPreviewUrl !== null,
     videoThumbnailUrl:
       remoteRecord.mediaKind === "video" &&
       remoteRecord.videoThumbnailStatus === "generated" &&
@@ -3357,10 +3373,10 @@ function copyMidjourneyJobId(inputPayload: unknown): CopyMidjourneyJobIdResult {
   return { ok: true };
 }
 
-async function downloadMidjourneyImage(inputPayload: unknown): Promise<DownloadMidjourneyImageResult> {
-  const imageId = (inputPayload as { imageId?: unknown } | null)?.imageId;
-  const remoteImageId = isPositiveInteger(imageId) ? imageId : null;
-  const remoteRecord = remoteImageId !== null ? getRemoteImageRecordById(remoteImageId) : null;
+async function downloadMidjourneyImageRecord(
+  remoteImageId: number,
+  remoteRecord: RemoteImageRecord
+): Promise<DownloadMidjourneyImageAttemptResult> {
   if (!remoteRecord || remoteRecord.provider !== MIDJOURNEY_PROVIDER || remoteRecord.mediaKind !== "image" || !remoteRecord.providerGroupId || !remoteRecord.remoteSlot) {
     return { ok: false, error: "Cette entrée n'est pas une image Midjourney téléchargeable." };
   }
@@ -3376,6 +3392,9 @@ async function downloadMidjourneyImage(inputPayload: unknown): Promise<DownloadM
   }
   const targetPath = resolveMidjourneyLocalImagePath(getMidjourneyLocalImagesDirectory(), key);
   if (!targetPath) return { ok: false, error: "Chemin local Midjourney invalide." };
+  if (remoteRecord.localCopyStatus === "downloaded" && remoteRecord.localCopyKey === key && existsSync(targetPath)) {
+    return { ok: true, reused: true };
+  }
   let temporaryPath: string | null = null;
   try {
     const response = await net.fetch(remoteRecord.remoteUrl, { cache: "no-store", headers: { Accept: "image/png,image/*;q=0.8" } });
@@ -3387,7 +3406,7 @@ async function downloadMidjourneyImage(inputPayload: unknown): Promise<DownloadM
     renameSync(temporaryPath, targetPath);
     temporaryPath = null;
     runSql("UPDATE remote_images SET local_copy_status = 'downloaded', local_copy_key = ?, updated_at = ? WHERE image_id = ?", [key, getNowIsoString(), remoteImageId]);
-    return { ok: true };
+    return { ok: true, reused: false };
   } catch (error) {
     if (temporaryPath && existsSync(temporaryPath)) {
       try {
@@ -3398,6 +3417,81 @@ async function downloadMidjourneyImage(inputPayload: unknown): Promise<DownloadM
     }
     if (remoteImageId !== null) runSql("UPDATE remote_images SET local_copy_status = 'failed', updated_at = ? WHERE image_id = ?", [getNowIsoString(), remoteImageId]);
     return { ok: false, error: error instanceof Error ? error.message : "Téléchargement Midjourney impossible." };
+  }
+}
+
+async function downloadMidjourneyImage(inputPayload: unknown): Promise<DownloadMidjourneyImageResult> {
+  const imageId = (inputPayload as { imageId?: unknown } | null)?.imageId;
+  if (!isPositiveInteger(imageId)) return { ok: false, error: "Référence Midjourney invalide." };
+  const remoteRecord = getRemoteImageRecordById(imageId);
+  if (!remoteRecord) return { ok: false, error: "Cette entrée n'est pas une image Midjourney téléchargeable." };
+  const result = await downloadMidjourneyImageRecord(imageId, remoteRecord);
+  return result.ok ? { ok: true } : result;
+}
+
+function getMidjourneyImageJobRecords(jobId: string): RemoteImageRecord[] {
+  const database = getSqliteDatabase();
+  if (!database) return [];
+  const result = database.exec(
+    `SELECT images.id
+     FROM images
+     INNER JOIN remote_images ON remote_images.image_id = images.id
+     WHERE images.source_kind = 'remote'
+       AND remote_images.provider = ?
+       AND remote_images.provider_group_id = ?
+       AND remote_images.media_kind = 'image'
+       AND remote_images.remote_slot IN ('0_0', '0_1', '0_2', '0_3')`,
+    [MIDJOURNEY_PROVIDER, jobId]
+  )[0];
+  if (!result) return [];
+  const idIndex = result.columns.indexOf("id");
+  return result.values
+    .map((row) => (typeof row[idIndex] === "number" ? getRemoteImageRecordById(row[idIndex] as number) : null))
+    .filter((record): record is RemoteImageRecord => record !== null);
+}
+
+async function downloadMidjourneyJobImages(inputPayload: unknown): Promise<DownloadMidjourneyJobImagesResult> {
+  const jobId = (inputPayload as { jobId?: unknown } | null)?.jobId;
+  if (typeof jobId !== "string" || !MIDJOURNEY_JOB_ID_PATTERN.test(jobId.trim())) {
+    return { ok: false, error: "Job ID Midjourney invalide." };
+  }
+  const normalizedJobId = jobId.trim().toLowerCase();
+  const recordsBySlot = new Map(
+    getMidjourneyImageJobRecords(normalizedJobId).map((record) => [record.remoteSlot, record])
+  );
+  let downloadedCount = 0;
+  let reusedCount = 0;
+  let failedCount = 0;
+  for (const slot of MIDJOURNEY_SLOTS) {
+    const record = recordsBySlot.get(slot);
+    if (!record) {
+      failedCount += 1;
+      continue;
+    }
+    const result = await downloadMidjourneyImageRecord(record.imageId, record);
+    if (!result.ok) failedCount += 1;
+    else if (result.reused) reusedCount += 1;
+    else downloadedCount += 1;
+  }
+  return { ok: true, downloadedCount, reusedCount, failedCount };
+}
+
+async function openMidjourneyJobFolder(inputPayload: unknown): Promise<OpenMidjourneyJobFolderResult> {
+  const jobId = (inputPayload as { jobId?: unknown } | null)?.jobId;
+  if (typeof jobId !== "string" || !MIDJOURNEY_JOB_ID_PATTERN.test(jobId.trim())) {
+    return { ok: false, error: "Job ID Midjourney invalide." };
+  }
+  const jobDirectory = resolveMidjourneyLocalImageJobDirectory(
+    getMidjourneyLocalImagesDirectory(),
+    jobId
+  );
+  if (!jobDirectory) return { ok: false, error: "Dossier Midjourney invalide." };
+  try {
+    mkdirSync(jobDirectory, { recursive: true });
+    const openError = await shell.openPath(jobDirectory);
+    return openError ? { ok: false, error: openError } : { ok: true };
+  } catch (error) {
+    return { ok: false, error: error instanceof Error ? error.message : "Impossible d'ouvrir le dossier Midjourney." };
   }
 }
 
@@ -4862,6 +4956,12 @@ ipcMain.handle(COPY_MIDJOURNEY_JOB_ID_CHANNEL, async (_event, input: unknown): P
 );
 ipcMain.handle(DOWNLOAD_MIDJOURNEY_IMAGE_CHANNEL, async (_event, input: unknown): Promise<DownloadMidjourneyImageResult> =>
   downloadMidjourneyImage(input)
+);
+ipcMain.handle(DOWNLOAD_MIDJOURNEY_JOB_IMAGES_CHANNEL, async (_event, input: unknown): Promise<DownloadMidjourneyJobImagesResult> =>
+  downloadMidjourneyJobImages(input)
+);
+ipcMain.handle(OPEN_MIDJOURNEY_JOB_FOLDER_CHANNEL, async (_event, input: unknown): Promise<OpenMidjourneyJobFolderResult> =>
+  openMidjourneyJobFolder(input)
 );
 
 ipcMain.handle(LIST_COLLECTIONS_CHANNEL, async (): Promise<CollectionListResult> =>

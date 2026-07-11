@@ -12,6 +12,8 @@ import type {
   CollectionMutationResult,
   CopyMidjourneyJobIdResult,
   DownloadMidjourneyImageResult,
+  DownloadMidjourneyJobImagesResult,
+  OpenMidjourneyJobFolderResult,
   CreateCollectionResult,
   DatabaseStatus,
   FolderTreeNode,
@@ -92,6 +94,8 @@ declare global {
       }) => Promise<RemoveRemoteImagesFromCatalogResult>;
       copyMidjourneyJobId: (input: { imageId: number }) => Promise<CopyMidjourneyJobIdResult>;
       downloadMidjourneyImage: (input: { imageId: number }) => Promise<DownloadMidjourneyImageResult>;
+      downloadMidjourneyJobImages: (input: { jobId: string }) => Promise<DownloadMidjourneyJobImagesResult>;
+      openMidjourneyJobFolder: (input: { jobId: string }) => Promise<OpenMidjourneyJobFolderResult>;
       listCollections: () => Promise<CollectionListResult>;
       createCollection: (input: { name: string; description?: string }) => Promise<CreateCollectionResult>;
       renameCollection: (input: {

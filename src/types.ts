@@ -36,6 +36,7 @@ export type ImageFile = {
   remoteSlot?: string | null;
   mediaKind?: MediaKind;
   videoThumbnailUrl?: string | null;
+  usesLocalCopy?: boolean;
 };
 
 export type ImageIdentity = {
@@ -167,6 +168,10 @@ export type SaveMidjourneyVideoThumbnailResult =
 
 export type CopyMidjourneyJobIdResult = { ok: true } | { ok: false; error: string };
 export type DownloadMidjourneyImageResult = { ok: true } | { ok: false; error: string };
+export type DownloadMidjourneyJobImagesResult =
+  | { ok: true; downloadedCount: number; reusedCount: number; failedCount: number }
+  | { ok: false; error: string };
+export type OpenMidjourneyJobFolderResult = { ok: true } | { ok: false; error: string };
 
 export type BatchUpdateImageUserMetadataResult =
   | {

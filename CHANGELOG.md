@@ -4,6 +4,11 @@
 
 - Ajout du schéma 10, de la clé relative et de la priorité d’affichage des copies locales lorsqu’elles existent.
 - Ajout de « Télécharger cette image MJ » pour enregistrer explicitement une image PNG Midjourney sélectionnée dans le cache applicatif.
+- Correction de la clé locale pour les slots image `0_0` à `0_3`.
+- Ajout du téléchargement explicite des quatre images existantes d'un job MJ depuis l'en-tête de sa carte en vue Jobs.
+- Affichage d'un badge discret `Local` lorsque la grille utilise réellement une copie locale d'image Midjourney.
+- Harmonisation visuelle et correction du positionnement des badges `Local` et MJ dans les vues Images et Jobs.
+- Ajout de l'ouverture du dossier de cache d'un job MJ image depuis son menu contextuel.
 - Le téléchargement ne concerne ni les vidéos, ni les jobs complets, ni les fichiers source de l’utilisateur.
 
 ## V0.1.3-dev.27 - Classification vidéo des observations Midjourney

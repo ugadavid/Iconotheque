@@ -29,6 +29,7 @@ type ImageGridProps = {
   onClearMultiSelection: () => void;
   onOpenImage: (image: ImageFile) => void;
   onImageContextMenu: (image: ImageFile, position: { x: number; y: number }) => void;
+  onMidjourneyJobContextMenu: (image: ImageFile, jobId: string, position: { x: number; y: number }) => void;
   onImageDragStart: (image: ImageFile) => number[];
   onImageGroupDragStart: (images: ImageFile[]) => number[];
   onImageDragEnd: () => void;
@@ -235,6 +236,7 @@ export function ImageGrid({
   onClearMultiSelection,
   onOpenImage,
   onImageContextMenu,
+  onMidjourneyJobContextMenu,
   onImageDragStart,
   onImageGroupDragStart,
   onImageDragEnd,
@@ -422,6 +424,7 @@ export function ImageGrid({
 
   const handleTileContextMenu = (image: ImageFile, event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
+    event.stopPropagation();
     onImageContextMenu(image, { x: event.clientX, y: event.clientY });
   };
 
@@ -534,6 +537,15 @@ export function ImageGrid({
               draggable={jobGroup.images.length > 0}
               onDragStart={(event) => handleJobDragStart(jobGroup.images, event)}
               onDragEnd={onImageDragEnd}
+              onContextMenu={(event) => {
+                if (!isMidjourneyVideoView && jobGroup.images[0]) {
+                  event.preventDefault();
+                  onMidjourneyJobContextMenu(jobGroup.images[0], jobGroup.jobId, {
+                    x: event.clientX,
+                    y: event.clientY
+                  });
+                }
+              }}
             >
               <header className="midjourney-job-heading">
                 <div>
@@ -609,6 +621,7 @@ export function ImageGrid({
                         }}
                       />}
                       {hasImageLoadError && image.mediaKind !== "video" ? <small>Image distante indisponible</small> : null}
+                      {image.usesLocalCopy && image.mediaKind !== "video" ? <span className="midjourney-local-copy-badge">Local</span> : null}
                       <span>{slot}</span>
                     </button>
                   );
@@ -713,6 +726,9 @@ export function ImageGrid({
                           : "MJ"
                         : "Web"}
                     </span>
+                  ) : null}
+                  {image.usesLocalCopy && image.mediaKind !== "video" ? (
+                    <span className="image-local-copy-badge">Local</span>
                   ) : null}
                 </div>
                 <span title={title}>{image.displayName}</span>

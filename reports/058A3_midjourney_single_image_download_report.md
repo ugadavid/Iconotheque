@@ -6,6 +6,14 @@
 - Version avant/après : `0.1.3-dev.28`.
 - La mission ajoute l'action contextuelle **Télécharger cette image MJ** pour une référence Midjourney image sélectionnée. Elle ne traite ni les vidéos ni le téléchargement des quatre slots d'un job.
 
+### Correctif 058A-4
+
+La recette manuelle a révélé un rejet systématique avec « Référence Midjourney invalide » pour les images existantes, par exemple `https://cdn.midjourney.com/ca7c8ec3-d970-4212-b932-0208fa4b49f7/0_2.png`.
+
+Cause exacte : le helper de clé locale validait les slots `0` à `3`, convention des vidéos MJ, alors que les images importées et servies par la visionneuse portent les slots `0_0` à `0_3`. L'URL distante et la validation du job étaient déjà correctes ; la construction de clé retournait donc `null` avant le téléchargement.
+
+La règle est désormais stricte pour ce helper d'images : seuls `0_0`, `0_1`, `0_2` et `0_3` sont acceptés. Exemple de clé : `ca7c8ec3-d970-4212-b932-0208fa4b49f7/ca7c8ec3-d970-4212-b932-0208fa4b49f7_0_2.png`. Les vidéos ne sont pas concernées.
+
 ## Flux livré
 
 1. Le renderer affiche l'action uniquement pour une référence distante `midjourney` de type `image`.
@@ -31,11 +39,13 @@ Les changements préexistants du worktree ne sont pas nettoyés ni attribués à
 - `npm.cmd run build` : succès.
 - `git diff --check` : succès.
 
+Après le correctif 058A-4, ces quatre contrôles ont été réexécutés avec succès. Le test ciblé vérifie maintenant explicitement la clé d'image `0_2`, la résolution de `0_3` et le rejet de `0` (slot vidéo), `0_4` et d'un UUID invalide.
+
 Les tests automatisés n'effectuent aucun accès réseau. Aucun test unitaire supplémentaire du téléchargement n'a été ajouté : le module main utilise directement `net.fetch`, SQLite et le système de fichiers, sans point d'injection existant ; un tel test nécessiterait une abstraction hors périmètre.
 
 ## Recette Electron
 
-Non réalisée dans cet environnement. À vérifier manuellement : ouvrir `Web / Midjourney`, clic droit sur une image PNG, choisir l'action, constater le message de succès, vérifier le fichier dans le cache, l'affichage de la tuile et de la visionneuse, puis redémarrer l'application. Vérifier aussi le message d'erreur et le repli distant si le CDN ne répond pas.
+Non réalisée dans cet environnement. À vérifier manuellement : ouvrir `Web / Midjourney`, clic droit sur une image PNG au slot `0_0` à `0_3`, choisir l'action, constater le message de succès, vérifier le fichier dans le cache, l'affichage de la tuile et de la visionneuse, puis redémarrer l'application. Vérifier aussi le message d'erreur et le repli distant si le CDN ne répond pas.
 
 ## Limites et invariants
 

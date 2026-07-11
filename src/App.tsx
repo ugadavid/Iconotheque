@@ -125,6 +125,7 @@ type ImageContextMenuState = {
   imageId: number;
   x: number;
   y: number;
+  midjourneyJobId?: string;
 };
 
 type CollectionContextMenuState = {
@@ -789,6 +790,33 @@ export default function App() {
 
       setImageContextMenu({
         imageId,
+        x: clamp(
+          position.x,
+          IMAGE_CONTEXT_MENU_MARGIN,
+          window.innerWidth - IMAGE_CONTEXT_MENU_WIDTH - IMAGE_CONTEXT_MENU_MARGIN
+        ),
+        y: clamp(
+          position.y,
+          IMAGE_CONTEXT_MENU_MARGIN,
+          window.innerHeight - IMAGE_CONTEXT_MENU_HEIGHT - IMAGE_CONTEXT_MENU_MARGIN
+        )
+      });
+      setCollectionContextMenu(null);
+    },
+    [selectedImageIds]
+  );
+
+  const handleMidjourneyJobContextMenu = useCallback(
+    (image: ImageFile, jobId: string, position: { x: number; y: number }): void => {
+      const imageId = getImageKey(image);
+      setSelectedImage(image);
+      if (!selectedImageIds.includes(imageId)) {
+        setSelectedImageIds([imageId]);
+      }
+      setSelectionAnchorImageId(imageId);
+      setImageContextMenu({
+        imageId,
+        midjourneyJobId: jobId,
         x: clamp(
           position.x,
           IMAGE_CONTEXT_MENU_MARGIN,
@@ -1533,6 +1561,42 @@ export default function App() {
     await loadMidjourneyImages();
   }, [contextMenuImage, loadMidjourneyImages]);
 
+  const handleDownloadMidjourneyJobImages = useCallback(async (): Promise<void> => {
+    const jobId = imageContextMenu?.midjourneyJobId;
+    if (!jobId || contextMenuImage?.remoteProvider !== "midjourney" || contextMenuImage.mediaKind === "video") return;
+    setImageContextMenu(null);
+    const result = await window.iconotheque.downloadMidjourneyJobImages({ jobId });
+    if (!result.ok) {
+      setVideoThumbnailGenerationResult({
+        ok: false,
+        title: "Téléchargement Midjourney",
+        message: `Téléchargement impossible : ${result.error}`
+      });
+      return;
+    }
+    setVideoThumbnailGenerationResult({
+      ok: result.failedCount === 0,
+      title: "Téléchargement Midjourney",
+      message: `Job Midjourney : ${result.downloadedCount} téléchargée(s), ${result.reusedCount} déjà présente(s), ${result.failedCount} échec(s).`
+    });
+    await loadMidjourneyImages();
+  }, [contextMenuImage, imageContextMenu?.midjourneyJobId, loadMidjourneyImages]);
+
+  const handleOpenMidjourneyJobFolder = useCallback(async (): Promise<void> => {
+    if (!contextMenuImage || contextMenuImage.remoteProvider !== "midjourney" || contextMenuImage.mediaKind === "video" || !contextMenuImage.remoteProviderGroupId) {
+      return;
+    }
+    setImageContextMenu(null);
+    const result = await window.iconotheque.openMidjourneyJobFolder({
+      jobId: contextMenuImage.remoteProviderGroupId
+    });
+    setVideoThumbnailGenerationResult(
+      result.ok
+        ? { ok: true, title: "Dossier Midjourney", message: "Dossier local du job ouvert." }
+        : { ok: false, title: "Dossier Midjourney", message: `Ouverture impossible : ${result.error}` }
+    );
+  }, [contextMenuImage]);
+
   const handleOpenAddRemoteModal = useCallback((): void => {
     setRemoteUrlDraft("");
     setRemoteAddError(null);
@@ -2203,6 +2267,7 @@ export default function App() {
           onClearMultiSelection={handleClearMultiSelection}
           onOpenImage={handleOpenImageViewer}
           onImageContextMenu={handleImageContextMenu}
+          onMidjourneyJobContextMenu={handleMidjourneyJobContextMenu}
           onImageDragStart={handleImageDragStart}
           onImageGroupDragStart={handleImageGroupDragStart}
           onImageDragEnd={handleImageDragEnd}
@@ -2284,7 +2349,17 @@ export default function App() {
                 Copier le job ID
               </button>
             ) : null}
-            {contextMenuImage?.remoteProvider === "midjourney" && contextMenuImage.mediaKind !== "video" ? (
+            {contextMenuImage?.remoteProvider === "midjourney" && contextMenuImage.remoteProviderGroupId && contextMenuImage.mediaKind !== "video" ? (
+              <button type="button" role="menuitem" onClick={() => { void handleOpenMidjourneyJobFolder(); }}>
+                Ouvrir le dossier du job MJ...
+              </button>
+            ) : null}
+            {imageContextMenu.midjourneyJobId && contextMenuImage?.remoteProvider === "midjourney" && contextMenuImage.mediaKind !== "video" ? (
+              <button type="button" role="menuitem" onClick={() => { void handleDownloadMidjourneyJobImages(); }}>
+                Télécharger les 4 images du job MJ
+              </button>
+            ) : null}
+            {!imageContextMenu.midjourneyJobId && contextMenuImage?.remoteProvider === "midjourney" && contextMenuImage.mediaKind !== "video" ? (
               <button type="button" role="menuitem" onClick={() => { void handleDownloadMidjourneyImage(); }}>
                 Télécharger cette image MJ
               </button>

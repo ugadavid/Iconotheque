@@ -26,6 +26,8 @@ const LIST_REMOTE_IMAGES_CHANNEL = "remote-image:list";
 const REMOVE_REMOTE_IMAGES_FROM_CATALOG_CHANNEL = "remote-image:remove-from-catalog";
 const COPY_MIDJOURNEY_JOB_ID_CHANNEL = "midjourney:copy-job-id";
 const DOWNLOAD_MIDJOURNEY_IMAGE_CHANNEL = "midjourney:download-image";
+const DOWNLOAD_MIDJOURNEY_JOB_IMAGES_CHANNEL = "midjourney:download-job-images";
+const OPEN_MIDJOURNEY_JOB_FOLDER_CHANNEL = "midjourney:open-job-folder";
 const ADD_REMOTE_IMAGE_REQUEST_CHANNEL = "remote-image:add-requested";
 const ADD_MIDJOURNEY_JOB_CHANNEL = "midjourney:add-job";
 const ADD_MIDJOURNEY_VIDEO_JOB_CHANNEL = "midjourney:add-video-job";
@@ -83,6 +85,7 @@ type ImageFile = {
   remoteSlot?: string | null;
   mediaKind?: "image" | "video";
   videoThumbnailUrl?: string | null;
+  usesLocalCopy?: boolean;
 };
 
 type SaveMidjourneyVideoThumbnailResult =
@@ -91,6 +94,10 @@ type SaveMidjourneyVideoThumbnailResult =
 
 type CopyMidjourneyJobIdResult = { ok: true } | { ok: false; error: string };
 type DownloadMidjourneyImageResult = { ok: true } | { ok: false; error: string };
+type DownloadMidjourneyJobImagesResult =
+  | { ok: true; downloadedCount: number; reusedCount: number; failedCount: number }
+  | { ok: false; error: string };
+type OpenMidjourneyJobFolderResult = { ok: true } | { ok: false; error: string };
 
 type ImageIdentity = {
   imageId: number;
@@ -415,6 +422,10 @@ contextBridge.exposeInMainWorld("iconotheque", {
     ipcRenderer.invoke(COPY_MIDJOURNEY_JOB_ID_CHANNEL, input),
   downloadMidjourneyImage: async (input: { imageId: number }): Promise<DownloadMidjourneyImageResult> =>
     ipcRenderer.invoke(DOWNLOAD_MIDJOURNEY_IMAGE_CHANNEL, input),
+  downloadMidjourneyJobImages: async (input: { jobId: string }): Promise<DownloadMidjourneyJobImagesResult> =>
+    ipcRenderer.invoke(DOWNLOAD_MIDJOURNEY_JOB_IMAGES_CHANNEL, input),
+  openMidjourneyJobFolder: async (input: { jobId: string }): Promise<OpenMidjourneyJobFolderResult> =>
+    ipcRenderer.invoke(OPEN_MIDJOURNEY_JOB_FOLDER_CHANNEL, input),
   listCollections: async (): Promise<CollectionListResult> =>
     ipcRenderer.invoke(LIST_COLLECTIONS_CHANNEL),
   createCollection: async (input: { name: string; description?: string }): Promise<CreateCollectionResult> =>

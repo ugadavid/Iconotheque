@@ -831,9 +831,29 @@ button.midjourney-slot {
   padding: 3px 6px;
   border-radius: 999px;
   color: #ffffff;
-  background: rgba(47, 95, 88, 0.88);
+  background: #216c65;
   font-size: 10px;
   font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.midjourney-slot > .midjourney-local-copy-badge {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: auto;
+  left: auto;
+  z-index: 3;
+  padding: 3px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 999px;
+  color: #ffffff;
+  background: #216c65;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .midjourney-slot-empty {
@@ -979,7 +999,24 @@ button.midjourney-slot {
   border: 1px solid rgba(255, 255, 255, 0.74);
   border-radius: 999px;
   color: #ffffff;
-  background: rgba(47, 95, 88, 0.86);
+  background: #216c65;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(31, 42, 45, 0.24);
+}
+
+.image-local-copy-badge {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  z-index: 4;
+  padding: 3px 7px;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 999px;
+  color: #ffffff;
+  background: #216c65;
   font-size: 10px;
   font-weight: 800;
   line-height: 1;
@@ -1068,6 +1105,17 @@ button.midjourney-slot {
   color: #526068;
   font-size: 12px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.image-preview > .image-source-badge,
+.image-preview > .image-local-copy-badge {
+  overflow: visible;
+  color: #ffffff;
+  background: #216c65;
+  font-size: 10px;
+  line-height: 1;
+  text-overflow: clip;
   white-space: nowrap;
 }
 
